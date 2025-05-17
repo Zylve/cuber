@@ -23,16 +23,16 @@ Wow that is a lot of goals haha.
 
 To keep the kinematics of the cube simple, I will use a similar approach to the students at Purdue and MIT: 6 motors, one for each face of the  (no full cube rotations). To allow for access to the cube, I will allow the housing for each motor to swing out like a flower, letting me swap the cube in and out.
 
-<img src="journal/kin.png" alt="alt text" style="max-height: 360px;">
+<img src="journal/kin.png" alt="alt text" height="360">
 
 I got 6 TCS3200 colour sensors from my school, and the idea is that one could cover each face of the cube on the corner, and rotate the face at 30° intervals to detect all 12 stickers.
 
-<img src="journal/colour.png" alt="alt text" style="max-height: 360px;">
+<img src="journal/colour.png" alt="alt text" height="360">
 
 I then imported the MG996R into Fusion 360 and designed a pinion for the Rubiks cube. It will drive the cube sides by slotting into the middle piece. This is when I realized that the motor spline is to small for my 3D printer to print. Instead, I will use the injection molded pinion that came with the motors, and probably superglue the pinion to it or smt idk.
 
-<img src="journal/2025-05-17_15-39-21.png" alt="alt text" style="max-height: 360px;">
-<img src="journal/20250517_153258.jpg" alt="alt text" style="max-height: 360px;">
-<img src="journal/20250517_153304.jpg" alt="alt text" style="max-height: 360px;">
+<img src="journal/2025-05-17_15-39-21.png" alt="alt text" height="360">
+<img src="journal/20250517_153258.jpg" alt="alt text" height="360">
+<img src="journal/20250517_153304.jpg" alt="alt text" height="360">
 
 ### Time today: 4 hours
