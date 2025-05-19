@@ -8,7 +8,8 @@ Cooked up my idea and started researching the parts lying around in my kit and t
 # May 17th:
 Okay so basically I set up the platformio dev environment and got my esp32 driving an MG996R stepper motor.
 
-<video controls src="journal/20250517_142640.mp4" title="Title" height="360" style="max-height: 360px;"></video>
+
+https://github.com/user-attachments/assets/8cf88195-3297-4feb-9b49-cdf6550582a8
 
 I've been wanting to create something like this for a while and I bought these components several months ago but never got around to seriously starting work on it. (And now it looks like Purdue beat me to it lol.)
 
@@ -45,10 +46,9 @@ Spent like 30 minutes today trying to make PlatformIO actually useable.
 I played with my prototype pinion a bit and learned that I need to apply a ton of normal force to allow the sides to rotate.
 
 ###### No force (left) vs. force (right)
-<p float="left">
-    <video controls src="journal/20250519_163445.mp4" title="Title" height="360" style="max-height: 360px;"></video>
-    <video controls src="journal/20250519_163508.mp4" title="Title" height="360" style="max-height: 360px;"></video>
-</p>
+https://github.com/user-attachments/assets/cadc4695-f0eb-4065-a3e3-c17ea3f0df7f
+
+https://github.com/user-attachments/assets/0a5ce550-07eb-4adf-b740-79804e6239e9
 
 I will need to loosen my cube a lot for this, but not so much that it explodes in your face. Lubricant is also needed, I don't know what type to use though. I can buy some specialized stuff from SpeedCubeShop or just douse the cube in some machine oil from my school's shop lol.
 
