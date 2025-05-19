@@ -1,4 +1,4 @@
-Total time: 5 hours
+Total time: 6 hours
 
 # May 15th: Started work!
 Cooked up my idea and started researching the parts lying around in my kit and the school shop.
@@ -38,3 +38,20 @@ I then imported the MG996R into Fusion 360 and designed a pinion for the Rubiks 
 </p>
 
 ### Time today: 4 hours
+
+# May 19th:
+Spent like 30 minutes today trying to make PlatformIO actually useable.
+
+I played with my prototype pinion a bit and learned that I need to apply a ton of normal force to allow the sides to rotate.
+
+###### No force (left) vs. force (right)
+<p float="left">
+    <video controls src="journal/20250519_163445.mp4" title="Title" height="360" style="max-height: 360px;"></video>
+    <video controls src="journal/20250519_163508.mp4" title="Title" height="360" style="max-height: 360px;"></video>
+</p>
+
+I will need to loosen my cube a lot for this, but not so much that it explodes in your face. Lubricant is also needed, I don't know what type to use though. I can buy some specialized stuff from SpeedCubeShop or just douse the cube in some machine oil from my school's shop lol.
+
+I haven't had a lot of time these past couple days but hopefully I will have some more soon!
+
+### Time today: 1 hour
