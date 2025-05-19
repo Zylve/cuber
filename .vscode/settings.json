@@ -1,6 +1,6 @@
 {
     "terminal.integrated.defaultProfile.linux": "",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // "terminal.integrated.defaultProfile.windows": "PowerShell",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
