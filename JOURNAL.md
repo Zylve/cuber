@@ -31,8 +31,10 @@ I got 6 TCS3200 colour sensors from my school, and the idea is that one could co
 
 I then imported the MG996R into Fusion 360 and designed a pinion for the Rubiks cube. It will drive the cube sides by slotting into the middle piece. This is when I realized that the motor spline is to small for my 3D printer to print. Instead, I will use the injection molded pinion that came with the motors, and probably superglue the pinion to it or smt idk.
 
-<img src="journal/2025-05-17_15-39-21.png" alt="alt text" height="360">
-<img src="journal/20250517_153258.jpg" alt="alt text" height="360">
-<img src="journal/20250517_153304.jpg" alt="alt text" height="360">
+<p float="left">
+    <img src="journal/2025-05-17_15-39-21.png" alt="alt text" height="360">
+    <img src="journal/20250517_153258.jpg" alt="alt text" height="360">
+    <img src="journal/20250517_153304.jpg" alt="alt text" height="360">
+</p>
 
 ### Time today: 4 hours
