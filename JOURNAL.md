@@ -1,4 +1,4 @@
-Total time: 6 hours
+Total time: 8 hours
 
 # May 15th: Started work!
 Cooked up my idea and started researching the parts lying around in my kit and the school shop.
@@ -45,7 +45,7 @@ Spent like 30 minutes today trying to make PlatformIO actually useable.
 
 I played with my prototype pinion a bit and learned that I need to apply a ton of normal force to allow the sides to rotate.
 
-###### No force (left) vs. force (right)
+###### No force (top) vs. force (bottom)
 https://github.com/user-attachments/assets/cadc4695-f0eb-4065-a3e3-c17ea3f0df7f
 
 https://github.com/user-attachments/assets/0a5ce550-07eb-4adf-b740-79804e6239e9
@@ -55,3 +55,20 @@ I will need to loosen my cube a lot for this, but not so much that it explodes i
 I haven't had a lot of time these past couple days but hopefully I will have some more soon!
 
 ### Time today: 1 hour
+
+
+# May 23rd:
+Finally got some spare time! Jumped into Fusion today and designed a prototype gearbox for the motor & pinion.
+
+Because the version of the MG996R I have has only 180° of rotation, I need to make a step up to allow for full range of motion. I went with a 1:2.5 gear ratio via a 30T pinion and a 12T gear. Not gonna lie the MG996R has a ton of torque—I did the math from the specsheet and I could go up to like 1:8 or something.
+
+Anyway, the 1:2.5 ratio works as all of the angles I need are whole numbers.
+
+<!-- Image.png -->
+<img src="journal/image.png" alt="alt text" height="360">
+
+I'll be able to 3D print this over the weekend and test it out. If it works, I'll be able to attach 6 of these together to create a full robot. I'm still thinking about how to get the cube in and out though. The flower idea I mentioned early is probably too complex. I'll maybe make the top motor attached via a bolt that you can screw in and out. 
+
+But now that we know we need a large normal force, we may have difficulty getting the cube in and out. When I have time I'll fiddle around with my pinion and see how much play there is and if it would be possible to twist the cube out. Otherwise we may need multiple motors to be unscrewable.
+
+### Time today: 2 hours
