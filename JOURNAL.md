@@ -1,9 +1,15 @@
-Total time: 8 hours
+---
+title: "Cuber"
+author: "Vuk"
+description: "An automatic Rubik's Cube solver"
+created_at: "2024-05-17"
+---
 
 # May 15th: Started work!
 Cooked up my idea and started researching the parts lying around in my kit and the school shop.
 
 ### Time today: 1 hour
+### Time total: 1 hour
 
 # May 17th:
 Okay so basically I set up the platformio dev environment and got my esp32 driving an MG996R stepper motor.
@@ -39,6 +45,7 @@ I then imported the MG996R into Fusion 360 and designed a pinion for the Rubiks 
 </p>
 
 ### Time today: 4 hours
+### Time total: 5 hours
 
 # May 19th:
 Spent like 30 minutes today trying to make PlatformIO actually useable.
@@ -55,6 +62,7 @@ I will need to loosen my cube a lot for this, but not so much that it explodes i
 I haven't had a lot of time these past couple days but hopefully I will have some more soon!
 
 ### Time today: 1 hour
+### Time total: 6 hours
 
 
 # May 23rd:
@@ -72,3 +80,4 @@ I'll be able to 3D print this over the weekend and test it out. If it works, I'l
 But now that we know we need a large normal force, we may have difficulty getting the cube in and out. When I have time I'll fiddle around with my pinion and see how much play there is and if it would be possible to twist the cube out. Otherwise we may need multiple motors to be unscrewable.
 
 ### Time today: 2 hours
+### Time total: 8 hours
