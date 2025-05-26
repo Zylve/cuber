@@ -81,3 +81,11 @@ But now that we know we need a large normal force, we may have difficulty gettin
 
 ### Time today: 2 hours
 ### Time total: 8 hours
+
+# May 24th & 25th:
+Printed the gearbox. Turns out I suck at superglueing stuff together. Note to future self: sand the prints before gluing lmao.
+
+Got it rotating and stuff. But I'm browning out the ESP32 on just a single stepper motor. Tomorrow I'll be able to take it to school and test it with an actual power supply.
+
+### Time this weekend: 4 hours
+### Time total: 12 hours
