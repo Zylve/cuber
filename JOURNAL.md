@@ -87,5 +87,7 @@ Printed the gearbox. Turns out I suck at superglueing stuff together. Note to fu
 
 Got it rotating and stuff. But I'm browning out the ESP32 on just a single stepper motor. Tomorrow I'll be able to take it to school and test it with an actual power supply.
 
+https://github.com/user-attachments/assets/a11832de-1fdf-4844-b957-5d1f5c20488e
+
 ### Time this weekend: 4 hours
 ### Time total: 12 hours
