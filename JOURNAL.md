@@ -91,3 +91,17 @@ https://github.com/user-attachments/assets/a11832de-1fdf-4844-b957-5d1f5c20488e
 
 ### Time this weekend: 4 hours
 ### Time total: 12 hours
+
+
+# May 30th
+
+So whats up. I tested the jig with a power supply and theres a couple things I learned:
+- I need to make it stiffer so that the gears dont twist out.
+- I suck at estimating tolerances.
+
+For most of my testing time, the pieces of the cube were catching on each other, so I had to tighten the cube faces down. It was able to rotate the sides of the cube, but it was quite innacurate due to how much tolerance there was in the pinion and the gears.
+
+I originally created a glue down cover for the pinion to rotate in, but my friend suggested that I make the shaft slide in and have the pinion be press fit.
+
+### Time today: 1 hour
+### Time total: 13 hours
