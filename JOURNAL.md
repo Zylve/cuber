@@ -105,3 +105,17 @@ I originally created a glue down cover for the pinion to rotate in, but my frien
 
 ### Time today: 1 hour
 ### Time total: 13 hours
+
+# May 31st
+
+Printed some tolerance tests.
+- Print in place: 0.5mm
+- Print out of place: 0.5mm
+- Press fit: 0.3mm
+
+Also designed a new pinion to better fit the cube. Reduced the tolerance between the pinion and the walls of the piece, and made it wrap around the corners. Not sure if the corner pieces actually do anything but maybe it increases the torque lever arm 🤷‍♂️.
+
+<img src="journal/2025-05-31_22-02-01.png" alt="alt text" height="360">
+
+### Time today: 3 hours
+### Time total: 16 hours
