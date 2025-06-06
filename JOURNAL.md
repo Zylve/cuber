@@ -129,6 +129,8 @@ Printed out the new gearbox and assembled it together. I need to update it a lit
 # June 2nd
 Brought it to school and tested it out. Works much better with a lot more backlash. I can still reduce the last bit of it by adding a shaft to the pinion gear, keeping it from rocking side to side. Other than that, its pretty sweet. Something I've noticed is that for some reason the motor isn't linear. 0-90 is the same as 90-180, but 180-270 is much smaller. All stuff that can be changed in software.
 
+https://github.com/user-attachments/assets/d39e9d64-2d36-401b-b0da-273edd4b6365
+
 Hopefully v3 will be the final version of the gearbox. Once I confirm that works then I can start cadding the full assembly.
 
 ### Time today: 2 hours
