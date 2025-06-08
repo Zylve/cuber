@@ -143,3 +143,11 @@ Spliced this power supply to power my esp32 and motors. It's 5V 10A, and each mo
 
 ### Time today: 1 hour
 ### Time total: 21 hours
+
+# June 7th
+Started playing with the colour sensors. I tried using a library and wasted hours getting it to work. I instead settled to just doing all the fancy stuff manually. I got it able to differentiate between red, green, and blue, but I really need to calibrate the values and tune the thresholds it if I want accurate colours. I think I might need to do this for all 6 sensors.
+
+Colour sensors pmo.
+
+### Time today: 4 hours
+### Time total: 25 hours
