@@ -133,3 +133,11 @@ Hopefully v3 will be the final version of the gearbox. Once I confirm that works
 
 ### Time today: 2 hours
 ### Time total: 20 hours
+
+# June 6th
+Spliced this power supply to power my esp32 and motors. It's 5V 10A, and each motor draws 2A maximum. Hooked it up and it works! I also looked into the specs of the jumper wires I was using and i could power up to 2 motors at a time. (22 AWG, 4A).
+
+<img src="journal/image (1).png" alt="alt text" height="360">
+
+### Time today: 1 hour
+### Time total: 21 hours
