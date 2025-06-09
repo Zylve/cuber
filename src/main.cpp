@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <ESP32Servo.h>
-#include <TCS3200.h>
+#include "colours/colours.h"
 
 #define BUTTON_PIN 4
 #define SERVO_PIN 12
@@ -16,23 +16,25 @@
 #define GEAR_RATIO 2.5
 #define OFFSET 10
 
+#define YELLOW_MIN_R   0.4
+#define YELLOW_MIN_G   0.4
+#define YELLOW_MAX_B   0.15
+
+#define ORANGE_MIN_R   0.6
+#define ORANGE_MAX_G   0.4
+#define ORANGE_MAX_B   0.15
+
+#define WHITE_MIN      0.30
+#define WHITE_MAX      0.37
+#define WHITE_TOLERANCE 0.07
+
 Servo servo;
 int currentState = 0;
 unsigned long lastDebounceTime = 0;
 
-String colourLabels[] = { "White", "Red", "Blue", "Orange", "Green", "Yellow" };
-RGBColor colourValues[] = {
-    {255, 255, 255}, // White
-    {255, 0, 0},     // Red
-    {0, 0, 255},     // Blue
-    {255, 165, 0},   // Orange
-    {0, 255, 0},     // Green
-    {255, 255, 0}    // Yellow
-};
+String get_colour(float, float, float, ColourConfig config = sensor_1);
 
-// TCS3200 colourSensor(S0, S1, S2, S3, OUT);
-
-int convertAngle(int angle) {
+int convert_angle(int angle) {
     return (angle + OFFSET) / GEAR_RATIO;
 }
 
@@ -108,17 +110,17 @@ void loop() {
     digitalWrite(S2, LOW);
     digitalWrite(S3, LOW);
     redFrequency = pulseIn(sensorOut, LOW);
-    r = map(redFrequency, 40, 110, 255, 0);
+    r = constrain(map(redFrequency, 41, 180, 255, 0), 0, 255);
 
     digitalWrite(S2, HIGH);
     digitalWrite(S3, HIGH);
     greenFrequency = pulseIn(sensorOut, LOW);
-    g = map(greenFrequency, 70, 153, 255, 0);
+    g = constrain(map(greenFrequency, 72, 255, 255, 0), 0, 255);
 
     digitalWrite(S2, LOW);
     digitalWrite(S3, HIGH);
     blueFrequency = pulseIn(sensorOut, LOW);
-    b = map(blueFrequency, 75, 160, 255, 0);
+    b = constrain(map(blueFrequency, 83, 311, 255, 0), 0, 255);
 
     float sum = r + g + b;
     if(sum == 0) sum = 1;
@@ -127,26 +129,52 @@ void loop() {
     float g_norm = g / sum;
     float b_norm = b / sum;
 
-    String color;
+    String colour = get_colour(r_norm, g_norm, b_norm);
 
-    if(r_norm > 0.4 && g_norm > 0.4 && b_norm > 0.4) {
-        color = "White";
-    } else if(r_norm > 0.5 && g_norm > 0.2 && b_norm > 0.2) {
-        color = "Orange";
-    } else if(g_norm > 0.5 && r_norm > 0.3 && b_norm < 0.2) {
-        color = "Yellow";
-    } else if(r_norm > g_norm && r_norm > b_norm) {
-        color = "Red";
-    } else if(g_norm > r_norm && g_norm > b_norm) {
-        color = "Green";
-    } else if(b_norm > r_norm && b_norm > g_norm) {
-        color = "Blue";
-    } else {
-        color = "Unknown";
-    }
+
+
 
     Serial.println("R: " + String(r_norm) +
         ", G: " + String(g_norm) +
-        ", B: " + String(b_norm) +
-        " | Color: " + color);
+        ", B: " + String(b_norm)
+        + " - Colour: " + colour);
+
+}
+
+String get_colour(float r, float g, float b, ColourConfig config) {
+    auto bounds_check = [](float value, float min, float max) {
+        return value >= min && value <= max;
+        };
+
+    auto in_range = [&](float r, float g, float b, ColourThresholds thresholds) {
+        return bounds_check(r, thresholds.red.min, thresholds.red.max) &&
+            bounds_check(g, thresholds.green.min, thresholds.green.max) &&
+            bounds_check(b, thresholds.blue.min, thresholds.blue.max);
+        };
+
+    if(in_range(r, g, b, config.white)) {
+        return "White";
+    }
+
+    if(in_range(r, g, b, config.orange)) {
+        return "Orange";
+    }
+
+    if(in_range(r, g, b, config.red)) {
+        return "Red";
+    }
+
+    if(in_range(r, g, b, config.green)) {
+        return "Green";
+    }
+
+    if(in_range(r, g, b, config.blue)) {
+        return "Blue";
+    }
+
+    if(in_range(r, g, b, config.yellow)) {
+        return "Yellow";
+    }
+
+    return "Unknown";
 }
