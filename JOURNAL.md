@@ -151,3 +151,17 @@ Colour sensors pmo.
 
 ### Time today: 4 hours
 ### Time total: 25 hours
+
+# June 8th
+Dude the colour sensor works. IT WORKS.
+
+I took min and max values for red, green, and blue, and then used this funky map function I found to map it to 0-255. I then used colour normalization to get the ratios of the colours (brightness independent). I then measured each side of the cube, getting the RGB ranges from right up against the cube to about 2 inches away. I could then just iterate over all my colours to find out which RGB band it falls into.
+
+So excited to get this working. I will probably have to recalibrate it when I make the assembly, and also do it for 5 other sensors :(
+
+However, now I know how to do it, so it should be faster next time!
+
+From now I want to focus on integrating a sensor mount into the gearbox, and combining everything into a single 6 motor assembly. I will probably also have to make a wiring diagram. These colour sensors require a lot of pins, (5 exactly) but two of them (the ones that set the frequency) can be shared across all of them, saving 10 pins.
+
+### Time today: 2 hours
+### Time total: 27 hours
