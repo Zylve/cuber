@@ -165,3 +165,17 @@ From now I want to focus on integrating a sensor mount into the gearbox, and com
 
 ### Time today: 2 hours
 ### Time total: 27 hours
+
+# June 9th
+
+Extended the drive shaft so that the cube wouldnt be blocked by the gearbox when turning. Added a mount for the colour sensor to the gearbox. I then also added some mounting holes and arranged the 6 gearboxes into an assembly.
+
+It's really coming together!
+
+I need to make the "net" that connects the 6 gearboxes together. The net will go on the inside of the gearboxes so that you can undo the bolts and just take them out without any maneuvering I also want to figure out how to make the wiring nice. It's gonna be so cooked because of how much there will be. I need 8 wires per gearbox (48 total) + more for splitting my power and ground. At the bottom of the assembly I can make a case for the ESP32. It might even be a good idea to make some buttons for control ("start", "stop"). But yeah. It's gonna be so good.
+
+<img src="journal/image (2).png" alt="alt text" height="360">
+<img src="journal/image (3).png" alt="alt text" height="360">
+
+### Time today: 4 hours
+### Time total: 31 hours
