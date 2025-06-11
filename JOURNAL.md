@@ -5,6 +5,9 @@ description: "An automatic Rubik's Cube solver"
 created_at: "2024-05-17"
 ---
 
+### Total Time: 38 hours
+---
+
 # May 15th: Started work!
 Cooked up my idea and started researching the parts lying around in my kit and the school shop.
 
@@ -194,5 +197,5 @@ I then made the wiring schematic in Fusion. It turned out a lot cleaner than I e
 <img src="journal/image (5).png" alt="alt text" height="360">
 <img src="journal/image (4).png" alt="alt text" height="360">
 
-### Time today: 6 hours
-### Time total: 37 hours
+### Time today: 7 hours
+### Time total: 38 hours
