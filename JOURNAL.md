@@ -163,6 +163,8 @@ However, now I know how to do it, so it should be faster next time!
 
 From now I want to focus on integrating a sensor mount into the gearbox, and combining everything into a single 6 motor assembly. I will probably also have to make a wiring diagram. These colour sensors require a lot of pins, (5 exactly) but two of them (the ones that set the frequency) can be shared across all of them, saving 10 pins.
 
+https://github.com/user-attachments/assets/c96f8a81-6cd7-4bb0-83de-4ab9377df998
+
 ### Time today: 2 hours
 ### Time total: 27 hours
 
