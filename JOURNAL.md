@@ -179,3 +179,18 @@ I need to make the "net" that connects the 6 gearboxes together. The net will go
 
 ### Time today: 4 hours
 ### Time total: 31 hours
+
+# June 10th
+Holy lock in.
+
+Made some "nets" that connects the gearboxes together, and a box to store all the electronics. The gearboxes mount to the net via 1/4-20 bolts, and when you unscrew them you can just take it right out with minimal fuss.
+
+The CAD is mostly finished at this point. I had to make a few small modifications to get the colour sensor to fit.
+
+I then made the wiring schematic in Fusion. It turned out a lot cleaner than I expected, but jesus it is a lot of wires. There will be lots of splicing and soldering to do for VBUS, GND, and sensor pins.
+
+<img src="journal/image (5).png" alt="alt text" height="360">
+<img src="journal/image (4).png" alt="alt text" height="360">
+
+### Time today: 6 hours
+### Time total: 37 hours
