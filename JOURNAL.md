@@ -199,3 +199,22 @@ I then made the wiring schematic in Fusion. It turned out a lot cleaner than I e
 
 ### Time today: 7 hours
 ### Time total: 38 hours
+
+
+# June 11th
+Printed a gearbox. These take a lot of time lol. Cleaned it up and removed the supports, then assembled it.
+
+### Time today: 1 hour
+### Time total: 39 hours
+
+# June 12th
+Printed another gearbox lol. I can really only print one a day because I like sleeping too much.
+
+### Time today: 1 hour
+### Time total: 40 hours
+
+# June 13th
+Yo so basically I goofed up in the CAD. Turns out the pinion was pressed further into the gear than I thought, so I made everything too close to the cube (As I was assembling the gearboxes with the shaft pressed perfectly into the gear). I had to spend some time modifying the nets to reach out a bit further (0.225") in each direction so that everything would fit. But now it's all good! I'll be able to get a bunch of printing and assembly done this weekend.
+
+### Time today: 2 hours
+### Time total: 42 hours
