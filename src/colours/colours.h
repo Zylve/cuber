@@ -60,7 +60,7 @@ struct ColourSensor {
     ColourConfig config;
     int sensor_out;
 
-    ColourSensor(ColourConfig cfg, int sensor_out) : config(cfg), sensor_out(sensor_out) {}
+    ColourSensor(ColourConfig config, int sensor_out) : config(config), sensor_out(sensor_out) {}
 
     ColourRaw colour_raw = ColourRaw(0, 0, 0);
     ColourBounded colour_bounded = ColourBounded(0, 0, 0);

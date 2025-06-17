@@ -2,9 +2,11 @@
 #include <ESP32Servo.h>
 #include "pins/pins.h"
 #include "colours/colours.h"
+#include "servos/servos.h"
 
 void setup() {
     pins_setup();
+    servos_setup();
 
     Serial.begin(9600);
 }

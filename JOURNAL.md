@@ -234,3 +234,18 @@ Printed the final gearbox. I also printed some of the gears but that will take s
     <img src="journal/20250615_103008.jpg" alt="alt text" height="360">
     <img src="journal/20250616_173118.jpg" alt="alt text" height="360">
 </p>
+
+Yo so I did a bunch of boilerplate code for the colour sensors and servos. It's all placeholder values as I can't actually get the real constants until it is fully built.
+
+The plan right now:
+- Print gears
+- Glue pinions to servos, and servos to gearboxes
+- Print the nets
+- While printing, write colour detection algorithm and implement Kociemba's
+- Assemble the entire thing
+- Wire it up & test functionality of each motor and sensor
+- Calibrate the sensors
+- Calibrate motors
+- Test it!
+
+### Time today: 4 hours
