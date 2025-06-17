@@ -218,3 +218,19 @@ Yo so basically I goofed up in the CAD. Turns out the pinion was pressed further
 
 ### Time today: 2 hours
 ### Time total: 42 hours
+
+# June 14th
+Printed 2 gearboxes.
+
+# June 15th
+Printed another gearbox lol.
+
+# June 16th
+Printed the final gearbox. I also printed some of the gears but that will take some time.
+
+<p float="left">
+    <img src="journal/20250612_201107.jpg" alt="alt text" height="360">
+    <img src="journal/20250615_103002.jpg" alt="alt text" height="360">
+    <img src="journal/20250615_103008.jpg" alt="alt text" height="360">
+    <img src="journal/20250616_173118.jpg" alt="alt text" height="360">
+</p>
