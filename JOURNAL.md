@@ -249,3 +249,33 @@ The plan right now:
 - Test it!
 
 ### Time today: 4 hours
+### Time total: 46 hours
+
+# June 17th
+Yo so I printed the gears 👍
+
+### Time today: 1 hour
+### Time total: 47 hours
+
+# June 18th
+I printed the bottom net. It took 12 hours but it's done! Looks great and it's fairly stiff so it won't flex under the weight of everything.
+
+<p float="left">
+    <img src="journal/20250618_082257.jpg" alt="alt text" height="360">
+    <img src="journal/20250618_155246.jpg" alt="alt text" height="360">
+    <img src="journal/20250618_205728.jpg" alt="alt text" height="360">
+    <img src="journal/20250618_222208.jpg" alt="alt text" height="360">
+</p>
+
+### Time today: 2 hours
+### Time total: 49 hours
+
+# June 19th
+Me when I forgot to order new filament.
+
+New roll isn't coming until tomorrow. I did get my connectors and wires though so I can start splicing stuff.
+
+<img src="journal/20250619_161252.jpg" alt="alt text" height="360">
+
+### Time today: 1 hour
+### Time total: 50 hours
