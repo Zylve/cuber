@@ -285,3 +285,14 @@ LAST DAY OF SCHOOL
 
 Anyway Kicad is so much nicer than Fusion 360 wtf. Made this cool new thing that's so much more readable.
 <img src="journal/image (7).png" alt="alt text" height="360">
+
+### Time today: 1 hour
+### Time total: 51 hours
+
+# June 21st
+I got the filament! Currently printing the top net. I also assembled most of the robot and have attached all the colour sensors. I'm still relaxing from school so I'm not really working that much today.
+
+<img src="journal/20250621_144627.jpg" alt="alt text" height="360">
+
+### Time today: 2 hours
+### Time total: 53 hours
