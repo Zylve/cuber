@@ -279,3 +279,9 @@ New roll isn't coming until tomorrow. I did get my connectors and wires though s
 
 ### Time today: 1 hour
 ### Time total: 50 hours
+
+# June 20th
+LAST DAY OF SCHOOL
+
+Anyway Kicad is so much nicer than Fusion 360 wtf. Made this cool new thing that's so much more readable.
+<img src="journal/image (7).png" alt="alt text" height="360">

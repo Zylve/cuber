@@ -7,7 +7,7 @@ The inspiration for Cuber came from watching videos of world record solvers. I a
 <img src="journal/image (5).png" width="360">
 
 ## Wiring Schematic
-<img src="journal/Wiring Diagram v2_page-0001.jpg">
+<img src="journal/image (7).png">
 
 ## Bill of Materials
 | Item                           | Amount | Cost (CAD) |

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ESP32-DEVKITC")(type "KiCad")(uri "${KIPRJMOD}/ESP32-DEVKITC")(options "")(descr ""))
+  (lib (name "TCS3200")(type "KiCad")(uri "${KIPRJMOD}/TCS3200")(options "")(descr ""))
+)
