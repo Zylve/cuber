@@ -1,7 +1,7 @@
 #pragma once
 
 #include <ESP32Servo.h>
-#include "pins/pins.h"
+#include "pins.h"
 
 struct ServoConfig {
     int axis_positions[4];

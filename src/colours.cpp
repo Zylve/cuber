@@ -1,6 +1,5 @@
 #include "colours.h"
-
-#include "pins/pins.h"
+#include "pins.h"
 
 ColourConfig config_1 = {
     .white = {
@@ -244,9 +243,9 @@ String get_colour(ColourNormalized colour, ColourConfig config) {
     return "Unknown";
 }
 
-ColourSensor sensor_1(config_1, sensor_1_out);
-ColourSensor sensor_2(config_2, sensor_2_out);
-ColourSensor sensor_3(config_3, sensor_3_out);
-ColourSensor sensor_4(config_4, sensor_4_out);
-ColourSensor sensor_5(config_5, sensor_5_out);
-ColourSensor sensor_6(config_6, sensor_6_out);
+ColourSensor sensor_1(config_1, SENSOR_1_OUT);
+ColourSensor sensor_2(config_2, SENSOR_2_OUT);
+ColourSensor sensor_3(config_3, SENSOR_3_OUT);
+ColourSensor sensor_4(config_4, SENSOR_4_OUT);
+ColourSensor sensor_5(config_5, SENSOR_5_OUT);
+ColourSensor sensor_6(config_6, SENSOR_6_OUT);

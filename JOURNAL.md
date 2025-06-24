@@ -296,3 +296,16 @@ I got the filament! Currently printing the top net. I also assembled most of the
 
 ### Time today: 2 hours
 ### Time total: 53 hours
+
+# June 23rd
+Code cleanup. Lowkey forgot the include folder was a thing so I moved all my headers into it.
+
+I then got to work wiring! I found out that I don't need to splice wires to put them into the lever nuts. I hooked up 5V, GND, & PWM for the servos. I still need to wire all the signal wires for the colour sensors.
+
+Wire management is currently a future me problem.
+
+<img src="journal/20250623_105949.jpg" alt="alt text" height="360">
+<img src="journal/20250623_123313.jpg" alt="alt text" height="360">
+
+### Time today: 4 hours
+### Time total: 57 hours
