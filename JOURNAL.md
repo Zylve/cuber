@@ -307,5 +307,7 @@ Wire management is currently a future me problem.
 <img src="journal/20250623_105949.jpg" alt="alt text" height="360">
 <img src="journal/20250623_123313.jpg" alt="alt text" height="360">
 
+https://github.com/user-attachments/assets/b7c72ac2-09a4-430d-928e-34b1d36eac41
+
 ### Time today: 4 hours
 ### Time total: 57 hours
