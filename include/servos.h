@@ -22,7 +22,7 @@ struct ServoWrapper {
     }
 
     void reset() {
-        servo.write(config.axis_positions[0]);
+        servo.write(config.axis_positions[1]);
         position = 0;
     }
 
@@ -57,5 +57,7 @@ extern ServoWrapper servo_3;
 extern ServoWrapper servo_4;
 extern ServoWrapper servo_5;
 extern ServoWrapper servo_6;
+
+extern ServoWrapper servos[];
 
 extern void servos_setup();

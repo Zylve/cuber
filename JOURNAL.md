@@ -309,3 +309,20 @@ Wire management is currently a future me problem.
 
 ### Time today: 4 hours
 ### Time total: 57 hours
+
+
+# June 29th
+Got to work testing the servos via code and making sure they all ran.
+
+### Time today: 2 hours
+### Time total: 59 hours
+
+# June 30th
+Completely overhauled the pwr and gnd wiring to make it much, much nicer. I also found out that specifically one of my servos doesn't have enough torque to turn the face of the cube. I've ordered a new one off aliexpress :(
+
+In the meantime, I can emulate the sixth servo by replacing each instance of U & U' in the steps with a specific algorithm that uses the other 5 faces to rotate it. This is how those commercial solvers work. It does cut down on speed, but it will be very easy to swap once the new servo arrives.
+
+<img src="journal/1000026751.jpg" alt="alt text" height="360">
+
+### Time today: 4 hours
+### Time total: 63 hours

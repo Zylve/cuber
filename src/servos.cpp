@@ -38,6 +38,15 @@ ServoWrapper servo_4(servo_config_4, SERVO_4_PIN);
 ServoWrapper servo_5(servo_config_5, SERVO_5_PIN);
 ServoWrapper servo_6(servo_config_6, SERVO_6_PIN);
 
+ServoWrapper servos[] = {
+    servo_1,
+    servo_2,
+    servo_3,
+    servo_4,
+    servo_5,
+    servo_6
+};
+
 void servos_setup() {
     servo_1.attach();
     servo_2.attach();
@@ -45,6 +54,7 @@ void servos_setup() {
     servo_4.attach();
     servo_5.attach();
     servo_6.attach();
+
 
     // servo_1.reset();
     // servo_2.reset();
