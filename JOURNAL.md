@@ -339,3 +339,10 @@ I tried porting Kociemba's, but it turned out it to be WAY too big for the esp32
 
 ### Time today: 6 hours
 ### Time total: 69 hours
+
+# July 2nd
+
+I got the first cube solve with manual colour input. 90 Seconds. Pretty good for the first solve with one of the motors missing. I want to aim for sub 20 seconds when this is all done. The next step is to hook up & calibrate the colour sensors.
+
+### Time today: 3 hours
+### Time total: 72 hours
