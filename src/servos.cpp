@@ -7,27 +7,27 @@ ServoConfig servo_config_1 = {
 };
 
 ServoConfig servo_config_2 = {
-    .axis_positions = {0, 90, 180, 270},
+    .axis_positions = {15, 55, 100, 145},
     .square_positions = {0, 45, 90, 135, 180, 225, 270, 315}
 };
 
 ServoConfig servo_config_3 = {
-    .axis_positions = {0, 90, 180, 270},
+    .axis_positions = {5, 41, 79, 125},
     .square_positions = {0, 45, 90, 135, 180, 225, 270, 315}
 };
 
 ServoConfig servo_config_4 = {
-    .axis_positions = {0, 90, 180, 270},
+    .axis_positions = {30, 66, 108, 150},
     .square_positions = {0, 45, 90, 135, 180, 225, 270, 315}
 };
 
 ServoConfig servo_config_5 = {
-    .axis_positions = {0, 90, 180, 270},
+    .axis_positions = {8, 47, 88, 133},
     .square_positions = {0, 45, 90, 135, 180, 225, 270, 315}
 };
 
 ServoConfig servo_config_6 = {
-    .axis_positions = {0, 90, 180, 270},
+    .axis_positions = {26, 62, 105, 145},
     .square_positions = {0, 45, 90, 135, 180, 225, 270, 315}
 };
 
@@ -38,28 +38,28 @@ ServoWrapper servo_4(servo_config_4, SERVO_4_PIN);
 ServoWrapper servo_5(servo_config_5, SERVO_5_PIN);
 ServoWrapper servo_6(servo_config_6, SERVO_6_PIN);
 
-ServoWrapper servos[] = {
-    servo_1,
-    servo_2,
-    servo_3,
-    servo_4,
-    servo_5,
-    servo_6
+ServoWrapper* servos[] = {
+    &servo_1,
+    &servo_2,
+    &servo_3,
+    &servo_4,
+    &servo_5,
+    &servo_6
 };
 
-void servos_setup() {
-    servo_1.attach();
-    servo_2.attach();
-    servo_3.attach();
-    servo_4.attach();
-    servo_5.attach();
-    servo_6.attach();
+void servo_input(int id) {
+    if(Serial.available()) {
+        String input = Serial.readStringUntil('\n');
+        int angle = input.toInt();
 
+        if(angle >= 0 && angle <= 180) {
+            servos[id - 1]->servo.write(angle);
+            Serial.print("Moved to: ");
+            Serial.println(angle);
+        } else {
+            Serial.println("Invalid angle.");
+        }
 
-    // servo_1.reset();
-    // servo_2.reset();
-    // servo_3.reset();
-    // servo_4.reset();
-    // servo_5.reset();
-    // servo_6.reset();
+        while(Serial.available()) Serial.read();
+    }
 }

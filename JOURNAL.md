@@ -328,3 +328,14 @@ In the meantime, I can emulate the sixth servo by replacing each instance of U &
 
 ### Time today: 4 hours
 ### Time total: 63 hours
+
+
+# July 1st
+CANADA DAY WOOO 🍁🍁🍁
+
+Anyways got stuff working. Found a workaround algorithm while I wait for the sixth servo to arrive.
+
+I tried porting Kociemba's, but it turned out it to be WAY too big for the esp32. So instead Cuber will have the solving logic run via python on a computer, and then relay the information back via the serial port.
+
+### Time today: 6 hours
+### Time total: 69 hours

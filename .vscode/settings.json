@@ -11,6 +11,12 @@
     "explorerExclude.backup": {},
     "files.associations": {
         ".clangd": "yaml",
-        "random": "cpp"
-    }
+        "random": "cpp",
+        "search.h": "c",
+        "string.h": "c",
+        "string": "cpp",
+        "prunetable_helpers.h": "c",
+        "string_view": "cpp"
+    },
+    "cmake.ignoreCMakeListsMissing": true
 }
