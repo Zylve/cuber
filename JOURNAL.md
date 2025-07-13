@@ -346,3 +346,8 @@ I got the first cube solve with manual colour input. 90 Seconds. Pretty good for
 
 ### Time today: 3 hours
 ### Time total: 72 hours
+
+# July 13th
+Hello from Undercity!
+
+<img src="journal/IMG_1107-edited.jpg" alt="alt text" height="360">
