@@ -351,3 +351,26 @@ I got the first cube solve with manual colour input. 90 Seconds. Pretty good for
 Hello from Undercity!
 
 <img src="journal/IMG_1107-edited.jpg" alt="alt text" height="360">
+
+# July 18th
+Yo so we back on that grind after an amazing weekend at Undercity.
+
+I changed the way I store servo calibrations, so that it is a grid where you can tune the number based on the current position of the servo.
+```cpp
+ServoConfig servo_config_1 = {
+    .axis_positions = {
+    //   0  1   2   3<-To  From
+        {7, 50, 85, 126}, // 0
+        {7, 50, 85, 126}, // 1
+        {7, 44, 85, 126}, // 2
+        {7, 44, 78, 126}  // 3
+    },
+};
+
+servo.write(config.axis_positions[position][target]);
+```
+
+I had to recalibrate ALL of the servos 🥀 but now its working. I had a weird bug where two turns in a row would cause it to fall short of it's goal so I added a turn_180 function that makes it move directly to the target.
+
+### Time today: 3 hours
+### Time total: 75 hours

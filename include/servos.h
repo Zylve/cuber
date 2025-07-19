@@ -4,7 +4,7 @@
 #include "pins.h"
 
 struct ServoConfig {
-    int axis_positions[4];
+    int axis_positions[4][4];  // [from_position][to_position]
     int square_positions[8];
 };
 
@@ -16,34 +16,31 @@ struct ServoWrapper {
 
     ServoWrapper(ServoConfig config, int pin) : config(config), servo_pin(pin) {}
 
-
     void attach() {
         servo.attach(servo_pin);
     }
 
     void reset() {
-        servo.write(config.axis_positions[0]);
+        servo.write(config.axis_positions[0][0]);
         position = 0;
     }
 
     void turn_left() {
-        if(position < 3) {
-            position++;
-        } else {
-            position = 0;
-        }
-
-        servo.write(config.axis_positions[position]);
+        int target = position < 3 ? position + 1 : 0;
+        servo.write(config.axis_positions[position][target]);
+        position = target;
     }
 
     void turn_right() {
-        if(position > 0) {
-            position--;
-        } else {
-            position = 3;
-        }
+        int target = position > 0 ? position - 1 : 3;
+        servo.write(config.axis_positions[position][target]);
+        position = target;
+    }
 
-        servo.write(config.axis_positions[position]);
+    void turn_180() {
+        int target = (position + 2) % 4;
+        servo.write(config.axis_positions[position][target]);
+        position = target;
     }
 
     void turn_to_square(int square) {
