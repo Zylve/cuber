@@ -7,6 +7,7 @@
 #include <esp_system.h>
 
 bool connected = false;
+void solve_test();
 
 void setup() {
     Serial.begin(9600);
@@ -14,12 +15,12 @@ void setup() {
 
     delay(1000);
 
-    for(int i = 0; i < 6; i++) {
-        servos[i]->attach();
-        servos[i]->reset();
+    // for(int i = 0; i < 6; i++) {
+    //     servos[i]->attach();
+    //     servos[i]->reset();
 
-        delay(1000);
-    }
+    //     delay(1000);
+    // }
 
     // while(!connected) {
     //     Serial.println("esp32_connect");
@@ -33,140 +34,8 @@ void setup() {
     //     }
     // }
 
-    // if(C_SOLVE_TEST) {
-    //     String solution = "";
-
-    //     while(true) {
-    //         String solu = Serial.readStringUntil('\n');
-
-    //         if(solu.substring(0, 5) == "solu:") {
-    //             solu.replace("solu:", "");
-    //             solu = solu + " ";
-    //             Serial.println(solu);
-    //             solution = solu;
-    //             break;
-    //         }
-    //     }
-
-    //     Serial.println("Sol parsed");
-
-    //     int moves = 1;
-    //     for(int i = 0; i < solution.length(); i++) {
-    //         if(solution[i] == ' ') {
-    //             moves++;
-    //         }
-    //     }
-
-    //     String output[moves];
-
-    //     int index = 0;
-    //     int start = 0;
-    //     for(int i = 0; i <= solution.length(); i++) {
-    //         if(solution[i] == ' ' || i == solution.length()) {
-    //             output[index++] = solution.substring(start, i);
-    //             start = i + 1;
-    //         }
-    //     }
-
-    //     Serial.println("moves parsed");
-
-    //     /*
-    //         U = 0
-    //         D = 5
-    //         F = 2
-    //         B = 3
-    //         L = 4
-    //         R = 1
-    //     */
-
-    //     for(int i = 0; i < moves; i++) {
-    //         Serial.println(output[i]);
-    //         if(output[i] == "D") {
-    //             servos[5]->turn_right();
-    //         } else if(output[i] == "D'") {
-    //             servos[5]->turn_left();
-    //         } else if(output[i] == "D2") {
-    //             servos[5]->turn_right();
-    //             servos[5]->turn_right();
-
-    //         } else if(output[i] == "F") {
-    //             servos[2]->turn_right();
-    //         } else if(output[i] == "F'") {
-    //             servos[2]->turn_left();
-    //         } else if(output[i] == "F2") {
-    //             servos[2]->turn_right();
-    //             servos[2]->turn_right();
-
-    //         } else if(output[i] == "B") {
-    //             servos[3]->turn_right();
-    //         } else if(output[i] == "B'") {
-    //             servos[3]->turn_left();
-    //         } else if(output[i] == "B2") {
-    //             servos[3]->turn_right();
-    //             servos[3]->turn_right();
-
-    //         } else if(output[i] == "L") {
-    //             servos[4]->turn_right();
-    //         } else if(output[i] == "L'") {
-    //             servos[4]->turn_left();
-    //         } else if(output[i] == "L2") {
-    //             servos[4]->turn_right();
-    //             servos[4]->turn_right();
-
-    //         } else if(output[i] == "R") {
-    //             servos[1]->turn_right();
-    //         } else if(output[i] == "R'") {
-    //             servos[1]->turn_left();
-    //         } else if(output[i] == "R2") {
-    //             servos[1]->turn_right();
-    //             servos[1]->turn_right();
-
-    //         } else if(output[i] == "U") {
-    //             servos[0]->turn_right();
-    //         } else if(output[i] == "U'") {
-    //             servos[0]->turn_left();
-    //         } else if(output[i] == "U2") {
-    //             servos[0]->turn_right();
-    //             servos[0]->turn_right();
-    //         }
-
-    //         delay(1000);
-    //     }
-    // }
-
-    // servos[4]->turn_180();
-
-    if(C_U_MOVE_TEST) {
-        // B' F' R2 L2 B F D B' F' R2 L2 B F
-
-        servos[3]->turn_left();
-        delay(1000);
-        servos[2]->turn_left();
-        delay(1000);
-        servos[1]->turn_180();
-        delay(1000);
-        servos[4]->turn_180();
-        delay(1000);
-        servos[3]->turn_right();
-        delay(1000);
-        servos[2]->turn_right();
-        delay(1000);
-        servos[5]->turn_right();
-        delay(1000);
-        servos[3]->turn_left();
-        delay(1000);
-        servos[2]->turn_left();
-        delay(1000);
-        servos[1]->turn_180();
-        delay(1000);
-        servos[4]->turn_180();
-        delay(1000);
-        servos[3]->turn_right();
-        delay(1000);
-        servos[2]->turn_right();
-        delay(1000);
-        servos[0]->turn_right();
-        delay(1000);
+    if(C_SOLVE_TEST) {
+        solve_test();
     }
 }
 
@@ -188,5 +57,108 @@ void loop() {
         }
 
         return;
+    }
+
+    sensors[0]->read_colour();
+    // auto raw = sensors[0]->get_colour_raw();
+    // Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
+    // auto bounded = sensors[0]->get_colour_bounded();
+    // Serial.println(String(bounded.red) + " " + String(bounded.green) + " " + String(bounded.blue));
+    auto normalized = sensors[0]->get_colour_normalized();
+    Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
+}
+
+void solve_test() {
+    String solution = "";
+
+    while(true) {
+        String solu = Serial.readStringUntil('\n');
+
+        if(solu.substring(0, 5) == "solu:") {
+            solu.replace("solu:", "");
+            solu = solu + " ";
+            Serial.println(solu);
+            solution = solu;
+            break;
+        }
+    }
+
+    Serial.println("Sol parsed");
+
+    int moves = 1;
+    for(int i = 0; i < solution.length(); i++) {
+        if(solution[i] == ' ') {
+            moves++;
+        }
+    }
+
+    String output[moves];
+
+    int index = 0;
+    int start = 0;
+    for(int i = 0; i <= solution.length(); i++) {
+        if(solution[i] == ' ' || i == solution.length()) {
+            output[index++] = solution.substring(start, i);
+            start = i + 1;
+        }
+    }
+
+    Serial.println("moves parsed");
+
+    /*
+        U = 0
+        D = 5
+        F = 2
+        B = 3
+        L = 4
+        R = 1
+    */
+
+    for(int i = 0; i < moves; i++) {
+        Serial.println(output[i]);
+        if(output[i] == "D") {
+            servos[5]->turn_right();
+        } else if(output[i] == "D'") {
+            servos[5]->turn_left();
+        } else if(output[i] == "D2") {
+            servos[5]->turn_180();
+
+        } else if(output[i] == "F") {
+            servos[2]->turn_right();
+        } else if(output[i] == "F'") {
+            servos[2]->turn_left();
+        } else if(output[i] == "F2") {
+            servos[2]->turn_180();
+
+        } else if(output[i] == "B") {
+            servos[3]->turn_right();
+        } else if(output[i] == "B'") {
+            servos[3]->turn_left();
+        } else if(output[i] == "B2") {
+            servos[3]->turn_180();
+
+        } else if(output[i] == "L") {
+            servos[4]->turn_right();
+        } else if(output[i] == "L'") {
+            servos[4]->turn_left();
+        } else if(output[i] == "L2") {
+            servos[4]->turn_180();
+
+        } else if(output[i] == "R") {
+            servos[1]->turn_right();
+        } else if(output[i] == "R'") {
+            servos[1]->turn_left();
+        } else if(output[i] == "R2") {
+            servos[1]->turn_180();
+
+        } else if(output[i] == "U") {
+            servos[0]->turn_right();
+        } else if(output[i] == "U'") {
+            servos[0]->turn_left();
+        } else if(output[i] == "U2") {
+            servos[0]->turn_180();
+        }
+
+        delay(1000);
     }
 }

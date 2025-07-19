@@ -120,3 +120,5 @@ extern ColourSensor sensor_3;
 extern ColourSensor sensor_4;
 extern ColourSensor sensor_5;
 extern ColourSensor sensor_6;
+
+extern ColourSensor* sensors[];

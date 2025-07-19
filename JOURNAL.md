@@ -374,3 +374,12 @@ I had to recalibrate ALL of the servos 🥀 but now its working. I had a weird b
 
 ### Time today: 3 hours
 ### Time total: 75 hours
+
+
+# July 19th
+I forgot to mention it yesterday, but changing the format of the servo positions also optimized it, since I could make it move further than it needs to, preventing it from slowing down at the end of a turn.
+
+I spent like 3 hours trying to calibrate the colour sensor. My usual method of taking min and max values of RGB on the red, green, and blue faces wasn't working so I instead tried taking the min and max values across all 6 faces. Was able to calibrate it, but didn't have time to test it yet.
+
+### Time today: 3 hours
+### Time total: 78 hours
