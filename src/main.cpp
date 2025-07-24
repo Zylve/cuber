@@ -64,8 +64,10 @@ void loop() {
     // Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
     // auto bounded = sensors[0]->get_colour_bounded();
     // Serial.println(String(bounded.red) + " " + String(bounded.green) + " " + String(bounded.blue));
-    auto normalized = sensors[0]->get_colour_normalized();
-    Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
+    // auto normalized = sensors[0]->get_colour_normalized();
+    // Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
+    auto written_colour = sensors[0]->get_colour();
+    Serial.println(written_colour);
 }
 
 void solve_test() {

@@ -383,3 +383,9 @@ I spent like 3 hours trying to calibrate the colour sensor. My usual method of t
 
 ### Time today: 3 hours
 ### Time total: 78 hours
+
+# July 23rd
+I got it to differentiate between all the colours! But it's only 1 sensor though. 5 more to go. I was able to test it and it is able to detect the different squares, but it does need to be semi accurate. Lock in this week will be craaazy.
+
+# Time today: 2 hours
+### Time total: 80 hours
