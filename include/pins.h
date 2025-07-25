@@ -1,7 +1,7 @@
 #pragma once
 
-#define S0 27
-#define S1 14
+#define S2_1 27
+#define S3_1 14
 #define S2 12
 #define S3 13
 

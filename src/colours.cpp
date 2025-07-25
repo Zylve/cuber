@@ -2,7 +2,7 @@
 #include "pins.h"
 
 ColourConfig config_1 = {
-    .white = {
+    .white = { // White Face
         .red = {0.30, 0.35},
         .green = {0.31, 0.37},
         .blue = {0.31, 0.37}
@@ -41,32 +41,32 @@ ColourConfig config_1 = {
 };
 
 ColourConfig config_2 = {
-    .white = { // Uncalibrated
+    .white = { // Red Face, Uncalibrated
         .red = {0.1, 0.35},
         .green = {0.3, 0.4},
         .blue = {0.3, 0.5}
     },
-    .red = { // Uncalibrated
+    .red = {
         .red = {0.55, 1.0},
         .green = {0.0, 0.25},
         .blue = {0.0, 0.45}
     },
-    .green = { // Uncalibrated
+    .green = {
         .red = {0.0, 0.2},
         .green = {0.55, 1.0},
         .blue = {0.0, 0.45}
     },
-    .blue = { // Uncalibrated
+    .blue = {
         .red = {0.0, 0.2},
         .green = {0.0, 0.4},
         .blue = {0.6, 1.0}
     },
-    .orange = { // Uncalibrated
+    .orange = {
         .red = {0.3, 0.8},
         .green = {0.0, 0.35},
         .blue = {0.2, 0.35}
     },
-    .yellow = { // Uncalibrated
+    .yellow = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
@@ -74,32 +74,32 @@ ColourConfig config_2 = {
 };
 
 ColourConfig config_3 = {
-    .white = { // Uncalibrated
+    .white = { // Green Face, Uncalibrated
         .red = {0.1, 0.35},
         .green = {0.3, 0.4},
         .blue = {0.3, 0.5}
     },
-    .red = { // Uncalibrated
+    .red = {
         .red = {0.55, 1.0},
         .green = {0.0, 0.25},
         .blue = {0.0, 0.45}
     },
-    .green = { // Uncalibrated
+    .green = {
         .red = {0.0, 0.2},
         .green = {0.55, 1.0},
         .blue = {0.0, 0.45}
     },
-    .blue = { // Uncalibrated
+    .blue = {
         .red = {0.0, 0.2},
         .green = {0.0, 0.4},
         .blue = {0.6, 1.0}
     },
-    .orange = { // Uncalibrated
+    .orange = {
         .red = {0.3, 0.8},
         .green = {0.0, 0.35},
         .blue = {0.2, 0.35}
     },
-    .yellow = { // Uncalibrated
+    .yellow = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
@@ -107,32 +107,32 @@ ColourConfig config_3 = {
 };
 
 ColourConfig config_4 = {
-    .white = { // Uncalibrated
+    .white = { // Blue Face, Uncalibrated
         .red = {0.1, 0.35},
         .green = {0.3, 0.4},
         .blue = {0.3, 0.5}
     },
-    .red = { // Uncalibrated
+    .red = {
         .red = {0.55, 1.0},
         .green = {0.0, 0.25},
         .blue = {0.0, 0.45}
     },
-    .green = { // Uncalibrated
+    .green = {
         .red = {0.0, 0.2},
         .green = {0.55, 1.0},
         .blue = {0.0, 0.45}
     },
-    .blue = { // Uncalibrated
+    .blue = {
         .red = {0.0, 0.2},
         .green = {0.0, 0.4},
         .blue = {0.6, 1.0}
     },
-    .orange = { // Uncalibrated
+    .orange = {
         .red = {0.3, 0.8},
         .green = {0.0, 0.35},
         .blue = {0.2, 0.35}
     },
-    .yellow = { // Uncalibrated
+    .yellow = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
@@ -140,32 +140,32 @@ ColourConfig config_4 = {
 };
 
 ColourConfig config_5 = {
-    .white = { // Uncalibrated
+    .white = { // Orange Face, Uncalibrated
         .red = {0.1, 0.35},
         .green = {0.3, 0.4},
         .blue = {0.3, 0.5}
     },
-    .red = { // Uncalibrated
+    .red = {
         .red = {0.55, 1.0},
         .green = {0.0, 0.25},
         .blue = {0.0, 0.45}
     },
-    .green = { // Uncalibrated
+    .green = {
         .red = {0.0, 0.2},
         .green = {0.55, 1.0},
         .blue = {0.0, 0.45}
     },
-    .blue = { // Uncalibrated
+    .blue = {
         .red = {0.0, 0.2},
         .green = {0.0, 0.4},
         .blue = {0.6, 1.0}
     },
-    .orange = { // Uncalibrated
+    .orange = {
         .red = {0.3, 0.8},
         .green = {0.0, 0.35},
         .blue = {0.2, 0.35}
     },
-    .yellow = { // Uncalibrated
+    .yellow = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
@@ -173,32 +173,32 @@ ColourConfig config_5 = {
 };
 
 ColourConfig config_6 = {
-    .white = { // Uncalibrated
+    .white = { // Yellow Face, Uncalibrated
         .red = {0.1, 0.35},
         .green = {0.3, 0.4},
         .blue = {0.3, 0.5}
     },
-    .red = { // Uncalibrated
+    .red = {
         .red = {0.55, 1.0},
         .green = {0.0, 0.25},
         .blue = {0.0, 0.45}
     },
-    .green = { // Uncalibrated
+    .green = {
         .red = {0.0, 0.2},
         .green = {0.55, 1.0},
         .blue = {0.0, 0.45}
     },
-    .blue = { // Uncalibrated
+    .blue = {
         .red = {0.0, 0.2},
         .green = {0.0, 0.4},
         .blue = {0.6, 1.0}
     },
-    .orange = { // Uncalibrated
+    .orange = {
         .red = {0.3, 0.8},
         .green = {0.0, 0.35},
         .blue = {0.2, 0.35}
     },
-    .yellow = { // Uncalibrated
+    .yellow = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}

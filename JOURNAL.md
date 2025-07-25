@@ -387,5 +387,16 @@ I spent like 3 hours trying to calibrate the colour sensor. My usual method of t
 # July 23rd
 I got it to differentiate between all the colours! But it's only 1 sensor though. 5 more to go. I was able to test it and it is able to detect the different squares, but it does need to be semi accurate. Lock in this week will be craaazy.
 
-# Time today: 2 hours
+### Time today: 2 hours
 ### Time total: 80 hours
+
+# July 24th
+Pulled out all of the wires and started final wiring. I RAN OUT OF DUPONT JUMPERS. So I need to go buy more 🥀. I have basically a giant wall of wagos so I think it would be nice to 3d print a case for them. It would also help with wiring as I could label and separate the openings.
+
+<p float="left">
+    <img src="journal/image copy.png" alt="alt text" height="360">
+    <img src="journal/image copy 2.png" alt="alt text" height="360">
+</p>
+
+### Time today: 2 hours
+### Time total: 82 hours

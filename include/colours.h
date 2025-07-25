@@ -86,14 +86,20 @@ struct ColourSensor {
 
         digitalWrite(S2, LOW);
         digitalWrite(S3, LOW);
+        digitalWrite(S2_1, LOW);
+        digitalWrite(S3_1, LOW);
         redFrequency = pulseIn(sensor_out, LOW);
 
         digitalWrite(S2, HIGH);
         digitalWrite(S3, HIGH);
+        digitalWrite(S2_1, HIGH);
+        digitalWrite(S3_1, HIGH);
         greenFrequency = pulseIn(sensor_out, LOW);
 
         digitalWrite(S2, LOW);
         digitalWrite(S3, HIGH);
+        digitalWrite(S2_1, LOW);
+        digitalWrite(S3_1, HIGH);
         blueFrequency = pulseIn(sensor_out, LOW);
 
         colour_raw = ColourRaw(redFrequency, greenFrequency, blueFrequency);
