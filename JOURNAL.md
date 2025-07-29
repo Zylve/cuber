@@ -33,18 +33,18 @@ Wow that is a lot of goals haha.
 
 To keep the kinematics of the cube simple, I will use a similar approach to the students at Purdue and MIT: 6 motors, one for each face of the  (no full cube rotations). To allow for access to the cube, I will allow the housing for each motor to swing out like a flower, letting me swap the cube in and out.
 
-<img src="journal/kin.png" alt="alt text" height="360">
+<img src="journal/kin.png" height="360">
 
 I got 6 TCS3200 colour sensors from my school, and the idea is that one could cover each face of the cube on the corner, and rotate the face at 30° intervals to detect all 12 stickers.
 
-<img src="journal/colour.png" alt="alt text" height="360">
+<img src="journal/colour.png" height="360">
 
 I then imported the MG996R into Fusion 360 and designed a pinion for the Rubiks cube. It will drive the cube sides by slotting into the middle piece. This is when I realized that the motor spline is to small for my 3D printer to print. Instead, I will use the injection molded pinion that came with the motors, and probably superglue the pinion to it or smt idk.
 
 <p float="left">
-    <img src="journal/2025-05-17_15-39-21.png" alt="alt text" height="360">
-    <img src="journal/20250517_153258.jpg" alt="alt text" height="360">
-    <img src="journal/20250517_153304.jpg" alt="alt text" height="360">
+    <img src="journal/2025-05-17_15-39-21.png" height="360">
+    <img src="journal/20250517_153258.jpg" height="360">
+    <img src="journal/20250517_153304.jpg" height="360">
 </p>
 
 ### Time today: 4 hours
@@ -76,7 +76,7 @@ Because the version of the MG996R I have has only 180° of rotation, I need to m
 Anyway, the 1:2.5 ratio works as all of the angles I need are whole numbers.
 
 <!-- Image.png -->
-<img src="journal/image.png" alt="alt text" height="360">
+<img src="journal/image.png" height="360">
 
 I'll be able to 3D print this over the weekend and test it out. If it works, I'll be able to attach 6 of these together to create a full robot. I'm still thinking about how to get the cube in and out though. The flower idea I mentioned early is probably too complex. I'll maybe make the top motor attached via a bolt that you can screw in and out. 
 
@@ -118,7 +118,7 @@ Printed some tolerance tests.
 
 Also designed a new pinion to better fit the cube. Reduced the tolerance between the pinion and the walls of the piece, and made it wrap around the corners. Not sure if the corner pieces actually do anything but maybe it increases the torque lever arm 🤷‍♂️.
 
-<img src="journal/2025-05-31_22-02-01.png" alt="alt text" height="360">
+<img src="journal/2025-05-31_22-02-01.png" height="360">
 
 ### Time today: 3 hours
 ### Time total: 16 hours
@@ -142,7 +142,7 @@ Hopefully v3 will be the final version of the gearbox. Once I confirm that works
 # June 6th
 Spliced this power supply to power my esp32 and motors. It's 5V 10A, and each motor draws 2A maximum. Hooked it up and it works! I also looked into the specs of the jumper wires I was using and i could power up to 2 motors at a time. (22 AWG, 4A).
 
-<img src="journal/image (1).png" alt="alt text" height="360">
+<img src="journal/image (1).png" height="360">
 
 ### Time today: 1 hour
 ### Time total: 21 hours
@@ -179,8 +179,8 @@ It's really coming together!
 
 I need to make the "net" that connects the 6 gearboxes together. The net will go on the inside of the gearboxes so that you can undo the bolts and just take them out without any maneuvering I also want to figure out how to make the wiring nice. It's gonna be so cooked because of how much there will be. I need 8 wires per gearbox (48 total) + more for splitting my power and ground. At the bottom of the assembly I can make a case for the ESP32. It might even be a good idea to make some buttons for control ("start", "stop"). But yeah. It's gonna be so good.
 
-<img src="journal/image (2).png" alt="alt text" height="360">
-<img src="journal/image (3).png" alt="alt text" height="360">
+<img src="journal/image (2).png" height="360">
+<img src="journal/image (3).png" height="360">
 
 ### Time today: 4 hours
 ### Time total: 31 hours
@@ -194,8 +194,8 @@ The CAD is mostly finished at this point. I had to make a few small modification
 
 I then made the wiring schematic in Fusion. It turned out a lot cleaner than I expected, but jesus it is a lot of wires. There will be lots of splicing and soldering to do for VBUS, GND, and sensor pins.
 
-<img src="journal/image (5).png" alt="alt text" height="360">
-<img src="journal/image (4).png" alt="alt text" height="360">
+<img src="journal/image (5).png" height="360">
+<img src="journal/image (4).png" height="360">
 
 ### Time today: 7 hours
 ### Time total: 38 hours
@@ -229,10 +229,10 @@ Printed another gearbox lol.
 Printed the final gearbox. I also printed some of the gears but that will take some time.
 
 <p float="left">
-    <img src="journal/20250612_201107.jpg" alt="alt text" height="360">
-    <img src="journal/20250615_103002.jpg" alt="alt text" height="360">
-    <img src="journal/20250615_103008.jpg" alt="alt text" height="360">
-    <img src="journal/20250616_173118.jpg" alt="alt text" height="360">
+    <img src="journal/20250612_201107.jpg" height="360">
+    <img src="journal/20250615_103002.jpg" height="360">
+    <img src="journal/20250615_103008.jpg" height="360">
+    <img src="journal/20250616_173118.jpg" height="360">
 </p>
 
 Yo so I did a bunch of boilerplate code for the colour sensors and servos. It's all placeholder values as I can't actually get the real constants until it is fully built.
@@ -261,10 +261,10 @@ Yo so I printed the gears 👍
 I printed the bottom net. It took 12 hours but it's done! Looks great and it's fairly stiff so it won't flex under the weight of everything.
 
 <p float="left">
-    <img src="journal/20250618_082257.jpg" alt="alt text" height="360">
-    <img src="journal/20250618_155246.jpg" alt="alt text" height="360">
-    <img src="journal/20250618_205728.jpg" alt="alt text" height="360">
-    <img src="journal/20250618_222208.jpg" alt="alt text" height="360">
+    <img src="journal/20250618_082257.jpg" height="360">
+    <img src="journal/20250618_155246.jpg" height="360">
+    <img src="journal/20250618_205728.jpg" height="360">
+    <img src="journal/20250618_222208.jpg" height="360">
 </p>
 
 ### Time today: 2 hours
@@ -275,7 +275,7 @@ Me when I forgot to order new filament.
 
 New roll isn't coming until tomorrow. I did get my connectors and wires though so I can start splicing stuff.
 
-<img src="journal/20250619_161252.jpg" alt="alt text" height="360">
+<img src="journal/20250619_161252.jpg" height="360">
 
 ### Time today: 1 hour
 ### Time total: 50 hours
@@ -284,7 +284,7 @@ New roll isn't coming until tomorrow. I did get my connectors and wires though s
 LAST DAY OF SCHOOL
 
 Anyway Kicad is so much nicer than Fusion 360 wtf. Made this cool new thing that's so much more readable.
-<img src="journal/image (7).png" alt="alt text" height="360">
+<img src="journal/image (7).png" height="360">
 
 ### Time today: 1 hour
 ### Time total: 51 hours
@@ -292,7 +292,7 @@ Anyway Kicad is so much nicer than Fusion 360 wtf. Made this cool new thing that
 # June 21st
 I got the filament! Currently printing the top net. I also assembled most of the robot and have attached all the colour sensors. I'm still relaxing from school so I'm not really working that much today.
 
-<img src="journal/20250621_144627.jpg" alt="alt text" height="360">
+<img src="journal/20250621_144627.jpg" height="360">
 
 ### Time today: 2 hours
 ### Time total: 53 hours
@@ -304,8 +304,8 @@ I then got to work wiring! I found out that I don't need to splice wires to put 
 
 Wire management is currently a future me problem.
 
-<img src="journal/20250623_105949.jpg" alt="alt text" height="360">
-<img src="journal/20250623_123313.jpg" alt="alt text" height="360">
+<img src="journal/20250623_105949.jpg" height="360">
+<img src="journal/20250623_123313.jpg" height="360">
 
 https://github.com/user-attachments/assets/b7c72ac2-09a4-430d-928e-34b1d36eac41
 
@@ -324,7 +324,7 @@ Completely overhauled the pwr and gnd wiring to make it much, much nicer. I also
 
 In the meantime, I can emulate the sixth servo by replacing each instance of U & U' in the steps with a specific algorithm that uses the other 5 faces to rotate it. This is how those commercial solvers work. It does cut down on speed, but it will be very easy to swap once the new servo arrives.
 
-<img src="journal/1000026751.jpg" alt="alt text" height="360">
+<img src="journal/1000026751.jpg" height="360">
 
 ### Time today: 4 hours
 ### Time total: 63 hours
@@ -350,7 +350,7 @@ I got the first cube solve with manual colour input. 90 Seconds. Pretty good for
 # July 13th
 Hello from Undercity!
 
-<img src="journal/IMG_1107-edited.jpg" alt="alt text" height="360">
+<img src="journal/IMG_1107-edited.jpg" height="360">
 
 # July 18th
 Yo so we back on that grind after an amazing weekend at Undercity.
@@ -396,8 +396,8 @@ I got it to differentiate between all the colours! But it's only 1 sensor though
 Pulled out all of the wires and started final wiring. I RAN OUT OF DUPONT JUMPERS. So I need to go buy more 🥀. I have basically a giant wall of wagos so I think it would be nice to 3d print a case for them. It would also help with wiring as I could label and separate the openings.
 
 <p float="left">
-    <img src="journal/image copy.png" alt="alt text" height="360">
-    <img src="journal/image copy 2.png" alt="alt text" height="360">
+    <img src="journal/image copy.png" height="360">
+    <img src="journal/image copy 2.png" height="360">
 </p>
 
 ### Time today: 2 hours

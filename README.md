@@ -1,3 +1,5 @@
+<img src="journal/Cuber Logo.png">
+
 # Cuber
 Cuber is an automatic rubiks cube robot that can read the state of a 3x3 cube and solve it using servo motors.
 
