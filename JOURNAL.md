@@ -5,7 +5,7 @@ description: "An automatic Rubik's Cube solver"
 created_at: "2024-05-17"
 ---
 
-### Total Time: 38 hours
+### Total Time: 86 hours
 ---
 
 # May 15th: Started work!
@@ -402,3 +402,17 @@ Pulled out all of the wires and started final wiring. I RAN OUT OF DUPONT JUMPER
 
 ### Time today: 2 hours
 ### Time total: 82 hours
+
+
+# July 28th
+Bought more jumpers and extended all of my cables! I'm also gonna hide my wago wall of doom and despair in a cool looking box.
+
+<p float="left">
+    <img src="journal/image copy 3.png" height="360">
+    <img src="journal/image copy 4.png" height="360">
+    <img src="journal/image copy 5.png" height="360">
+    <img src="journal/image copy 6.png" height="360">
+</p>
+
+### Time today: 4 hours
+### Time total: 86 hours
