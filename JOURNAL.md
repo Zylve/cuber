@@ -405,7 +405,7 @@ Pulled out all of the wires and started final wiring. I RAN OUT OF DUPONT JUMPER
 
 
 # July 28th
-Bought more jumpers and extended all of my cables! I'm also gonna hide my wago wall of doom and despair in a cool looking box.
+Bought more jumpers and extended all of my cables! I'm also gonna hide my wago wall of doom and despair in a cool looking box. I was able to print the lid today.
 
 <p float="left">
     <img src="journal/image copy 3.png" height="360">
@@ -416,3 +416,13 @@ Bought more jumpers and extended all of my cables! I'm also gonna hide my wago w
 
 ### Time today: 4 hours
 ### Time total: 86 hours
+
+# July 29th
+Printed the box! Took 13 hours on my slow ahh printer but its done. Now I can finally do the finished wiring. I also polished the CAD a bit by modelling the fasteners and electronics.
+
+<p float="left">
+    <img src="journal/image copy 7.png" height="360">
+    <img src="journal/image copy 8.png" height="360">
+    <img src="journal/20250729_211605.jpg" height="360">
+    <img src="journal/20250729_211612.jpg" height="360">
+</p>

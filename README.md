@@ -6,7 +6,7 @@ Cuber is an automatic rubiks cube robot that can read the state of a 3x3 cube an
 The inspiration for Cuber came from watching videos of world record solvers. I always thought they were really cool. Why not make it myself? It's been a couple years but now I'm actually doing it!
 
 ## 3D Model
-<img src="journal/image (5).png" width="360">
+<img src="journal/image copy 5.png" width="360">
 
 ## Wiring Schematic
 <img src="journal/image (7).png">
@@ -25,5 +25,3 @@ The inspiration for Cuber came from watching videos of world record solvers. I a
 |                                |        |            |
 | **Total**                      |        | **$101.76**|
 | **Total USD**                  |        | **$74.39** |
-
-I didn't pay any tax AFAIK.
