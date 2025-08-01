@@ -7,6 +7,7 @@
 #include <esp_system.h>
 
 bool connected = false;
+int test = 1;
 void solve_test();
 
 void setup() {
@@ -37,6 +38,9 @@ void setup() {
     if(C_SOLVE_TEST) {
         solve_test();
     }
+
+    servos[test - 1]->attach();
+    servos[test - 1]->reset();
 }
 
 void loop() {
@@ -59,7 +63,11 @@ void loop() {
         return;
     }
 
-    sensors[0]->read_colour();
+    sensors[test - 1]->read_colour();
+    auto raw = sensors[test - 1]->get_colour_raw();
+    Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
+
+    // sensors[0]->read_colour();
     // auto raw = sensors[1]->get_colour_raw();
     // Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
     // auto bounded = sensors[1]->get_colour_bounded();

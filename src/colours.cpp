@@ -70,6 +70,12 @@ ColourConfig config_2 = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
+    },
+
+    .colour_map = {
+        .red = {63, 327},
+        .green = {85, 265},
+        .blue = {79, 215}
     }
 };
 
@@ -103,6 +109,12 @@ ColourConfig config_3 = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
+    },
+
+    .colour_map = {
+        .red = {63, 327},
+        .green = {85, 265},
+        .blue = {79, 215}
     }
 };
 
@@ -136,6 +148,12 @@ ColourConfig config_4 = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
+    },
+
+    .colour_map = {
+        .red = {63, 327},
+        .green = {85, 265},
+        .blue = {79, 215}
     }
 };
 
@@ -169,6 +187,12 @@ ColourConfig config_5 = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
+    },
+
+    .colour_map = {
+        .red = {63, 327},
+        .green = {85, 265},
+        .blue = {79, 215}
     }
 };
 
@@ -202,6 +226,12 @@ ColourConfig config_6 = {
         .red = {0.2, 0.35},
         .green = {0.3, 0.55},
         .blue = {0.25, 0.35}
+    },
+
+    .colour_map = {
+        .red = {63, 327},
+        .green = {85, 265},
+        .blue = {79, 215}
     }
 };
 
@@ -211,8 +241,8 @@ bool bounds_check(float value, float min, float max) {
 
 bool in_range(ColourNormalized colour, ColourThresholds thresholds) {
     return bounds_check(colour.red, thresholds.red.min, thresholds.red.max) &&
-           bounds_check(colour.green, thresholds.green.min, thresholds.green.max) &&
-           bounds_check(colour.blue, thresholds.blue.min, thresholds.blue.max);
+        bounds_check(colour.green, thresholds.green.min, thresholds.green.max) &&
+        bounds_check(colour.blue, thresholds.blue.min, thresholds.blue.max);
 };
 
 String get_colour(ColourNormalized colour, ColourConfig config) {
