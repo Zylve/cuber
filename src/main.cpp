@@ -7,7 +7,6 @@
 #include <esp_system.h>
 
 bool connected = false;
-int test = 1;
 void solve_test();
 
 void setup() {
@@ -16,12 +15,12 @@ void setup() {
 
     delay(1000);
 
-    // for(int i = 0; i < 6; i++) {
-    //     servos[i]->attach();
-    //     servos[i]->reset();
+    for(int i = 0; i < 6; i++) {
+        servos[i]->attach();
+        // servos[i]->reset();
 
-    //     delay(1000);
-    // }
+        delay(1000);
+    }
 
     // while(!connected) {
     //     Serial.println("esp32_connect");
@@ -38,9 +37,6 @@ void setup() {
     if(C_SOLVE_TEST) {
         solve_test();
     }
-
-    servos[test - 1]->attach();
-    servos[test - 1]->reset();
 }
 
 void loop() {
@@ -63,19 +59,15 @@ void loop() {
         return;
     }
 
-    sensors[test - 1]->read_colour();
-    auto raw = sensors[test - 1]->get_colour_raw();
-    Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
-
-    // sensors[0]->read_colour();
-    // auto raw = sensors[1]->get_colour_raw();
+    sensors[0]->read_colour();
+    // auto raw = sensors[0]->get_colour_raw();
     // Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
-    // auto bounded = sensors[1]->get_colour_bounded();
+    // auto bounded = sensors[0]->get_colour_bounded();
     // Serial.println(String(bounded.red) + " " + String(bounded.green) + " " + String(bounded.blue));
-    // auto normalized = sensors[1]->get_colour_normalized();
-    // Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
-    // auto written_colour = sensors[1]->get_colour();
-    // Serial.println(written_colour);
+    auto normalized = sensors[0]->get_colour_normalized();
+    Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
+    auto written_colour = sensors[0]->get_colour();
+    Serial.println(written_colour);
 }
 
 void solve_test() {

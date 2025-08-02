@@ -1,5 +1,6 @@
 #include "servos.h"
 #include "pins.h"
+#include "colours.h"
 
 ServoConfig servo_config_1 = {
     .axis_positions = {
@@ -77,13 +78,25 @@ ServoWrapper* servos[] = {
     &servo_6
 };
 
+unsigned long lastColorRead = 0;
+const unsigned long COLOR_READ_INTERVAL = 1000;
+
 void servo_input(int id) {
+    unsigned long currentMillis = millis();
+    
+    if(currentMillis - lastColorRead >= COLOR_READ_INTERVAL) {
+        sensors[0]->read_colour();
+        auto written_colour = sensors[0]->get_colour();
+        Serial.println(written_colour);
+        lastColorRead = currentMillis;
+    }
+
     if(Serial.available()) {
         String input = Serial.readStringUntil('\n');
         int angle = input.toInt();
 
         if(angle >= 0 && angle <= 180) {
-            servos[id - 1]->servo.write(angle);
+            servos[id]->servo.write(angle);
             Serial.print("Moved to: ");
             Serial.println(angle);
         } else {

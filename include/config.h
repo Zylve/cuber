@@ -1,7 +1,7 @@
 #pragma once
 
 #define C_SERVO_INPUT false // Enable manual input of servo angles via serial monitor.
-#define C_SERVO_INPUT_ID 5
+#define C_SERVO_INPUT_ID 0
 
 #define C_SERVO_TEST false
 

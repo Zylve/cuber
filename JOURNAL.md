@@ -452,3 +452,11 @@ Anyways that's chill. Now I can focus on calibrating the colour sensors.
 
 ### Time today: 6 hours
 ### Time total: 94 hours
+
+# August 1st
+Yo so the colour sensor calibrations work, but it all breaks down when doing individual squares as light from the adjacent squares bleeds into it. I create a kind of nozzle that would focus it onto a tiny spot. It improves it a lot, but it isn't quite there. It had a 9mm hole so I scaled it down to 5mm and printed it. Tomorrow I'll test it out.
+
+FYI I have created a self-imposed deadling of this Sunday (August 3rd) to make the colour sensors work. Past that I will give up and create an easy routing for manually inputting the colours.
+
+### Time today: 3 hours
+### Time total: 97 hours

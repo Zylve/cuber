@@ -65,3 +65,4 @@ GND:
         - G2-5C
 
 Signal:
+- Signal has no specific routings so we don't care about differentiating each wire.
