@@ -466,5 +466,7 @@ The new nozzle works! It's really consistent. It does reduce the light coming in
 
 Hit the 100 hour mark though!
 
+https://github.com/user-attachments/assets/758a44dc-87e6-4893-bd0c-782bb4a80f7b
+
 ### Time today: 7 hours
 ### Time total: 104 hours
