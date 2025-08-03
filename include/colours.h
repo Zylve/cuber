@@ -55,7 +55,9 @@ struct ColourConfig {
     ColourMap colour_map;
 };
 
-String get_colour(ColourNormalized colour, ColourConfig config);
+String get_colour_string(ColourNormalized colour, ColourConfig config);
+int get_colour(ColourNormalized colour, ColourConfig config);
+String get_colour_face(ColourNormalized colour, ColourConfig config);
 
 struct ColourSensor {
     ColourConfig config;
@@ -113,10 +115,19 @@ struct ColourSensor {
         colour_normalized = ColourNormalized(colour_bounded);
     }
 
-    String get_colour() {
-        read_colour();
+    String get_colour_string() {
+        ColourNormalized colour = get_colour_normalized();
+        return ::get_colour_string(colour, config);
+    }
+
+    int get_colour() {
         ColourNormalized colour = get_colour_normalized();
         return ::get_colour(colour, config);
+    }
+
+    String get_colour_face() {
+        ColourNormalized colour = get_colour_normalized();
+        return ::get_colour_face(colour, config);
     }
 };
 

@@ -6,6 +6,7 @@
 struct ServoConfig {
     int axis_positions[4][4];  // [from_position][to_position]
     int square_positions[8];
+    int square_ids[8];
 };
 
 struct ServoWrapper {
@@ -57,4 +58,4 @@ extern ServoWrapper servo_6;
 
 extern ServoWrapper* servos[];
 
-extern void servo_input(int id);
+extern void servo_input(int id, bool square_input);

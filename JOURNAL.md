@@ -460,3 +460,11 @@ FYI I have created a self-imposed deadling of this Sunday (August 3rd) to make t
 
 ### Time today: 3 hours
 ### Time total: 97 hours
+
+# August 2nd
+The new nozzle works! It's really consistent. It does reduce the light coming into the sensor a lot, but that doesn't affect it due to the normalization. I wrote a quick one-sided detection routine and calibrated three sides of the cube (top, front, and right). Calibrating it takes so much goddamn time. Still got the other half to do.
+
+Hit the 100 hour mark though!
+
+### Time today: 7 hours
+### Time total: 104 hours
