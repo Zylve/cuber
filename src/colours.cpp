@@ -80,7 +80,7 @@ ColourConfig config_2 = {
 };
 
 ColourConfig config_3 = {
-        .white = { // Green Face; Uncalibrated
+        .white = { // Green Face
         .red = {0.30, 0.36},
         .green = {0.31, 0.37},
         .blue = {0.31, 0.37}
@@ -93,12 +93,12 @@ ColourConfig config_3 = {
     .green = {
         .red = {0.35, 0.48},
         .green = {0.37, 0.60},
-        .blue = {0.00, 0.15}
+        .blue = {0.00, 0.20}
     },
     .blue = {
-        .red = {0.00, 0.36},
+        .red = {0.00, 0.39},
         .green = {0.10, 0.37},
-        .blue = {0.37, 1.00}
+        .blue = {0.34, 1.00}
     },
     .orange = {
         .red = {0.38, 0.50},
@@ -120,40 +120,40 @@ ColourConfig config_3 = {
 
 ColourConfig config_4 = {
         .white = { // Blue Face; Uncalibrated
-        .red = {0.30, 0.36},
-        .green = {0.31, 0.37},
-        .blue = {0.31, 0.37}
+        .red = {0.32, 0.36},
+        .green = {0.30, 0.36},
+        .blue = {0.32, 0.37}
     },
     .red = {
-        .red = {0.48, 1.00},
-        .green = {0.00, 0.25},
-        .blue = {0.00, 0.20}
+        .red = {0.46, 0.62},
+        .green = {0.00, 0.18},
+        .blue = {0.36, 0.42}
     },
     .green = {
-        .red = {0.35, 0.46},
-        .green = {0.30, 0.64},
-        .blue = {0.00, 0.17}
+        .red = {0.20, 0.32},
+        .green = {0.30, 0.41},
+        .blue = {0.30, 0.41}
     },
     .blue = {
-        .red = {0.11, 0.42},
+        .red = {0.00, 0.15},
         .green = {0.15, 0.33},
-        .blue = {0.37, 0.68}
+        .blue = {0.50, 1.00}
     },
     .orange = {
-        .red = {0.38, 0.58},
-        .green = {0.28, 0.36},
-        .blue = {0.13, 0.30}
+        .red = {0.34, 0.42},
+        .green = {0.23, 0.28},
+        .blue = {0.35, 0.40}
     },
     .yellow = {
-        .red = {0.33, 0.42},
-        .green = {0.33, 0.42},
-        .blue = {0.20, 0.29}
+        .red = {0.32, 0.34},
+        .green = {0.32, 0.34},
+        .blue = {0.33, 0.35}
     },
 
     .colour_map = {
-        .red = {2500, 38000},
-        .green = {3600, 24000},
-        .blue = {3400, 18000}
+        .red = {3600, 60000},
+        .green = {4000, 50000},
+        .blue = {800, 18000} // 9200
     }
 };
 

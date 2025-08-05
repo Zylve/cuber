@@ -37,7 +37,7 @@ void setup() {
 
     delay(1000);
 
-    colour_routine_test();
+    // colour_routine_test();
 
     if(C_SOLVE_TEST) {
         solve_test();
@@ -64,16 +64,17 @@ void loop() {
         return;
     }
 
-    // sensors[2]->read_colour();
-    // auto raw = sensors[2]->get_colour_raw();
+    sensors[3]->read_colour();
+    auto raw = sensors[3]->get_colour_raw();
     // Serial.println(String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
-    // auto bounded = sensors[2]->get_colour_bounded();
+    // auto bounded = sensors[3]->get_colour_bounded();
     // Serial.println(String(bounded.red) + " " + String(bounded.green) + " " + String(bounded.blue));
-    // auto normalized = sensors[2]->get_colour_normalized();
+    auto normalized = sensors[3]->get_colour_normalized();
     // Serial.println(String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
-    // auto written_colour = sensors[2]->get_colour_string();
+    auto written_colour = sensors[3]->get_colour_string();
     // Serial.println(written_colour);
     // Serial.println(written_colour  + ": " + String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue));
+    Serial.println(written_colour  + ": " + String(normalized.red) + " " + String(normalized.green) + " " + String(normalized.blue) + " | " + String(raw.red) + " " + String(raw.green) + " " + String(raw.blue));
 }
 
 void colour_routine_test() {

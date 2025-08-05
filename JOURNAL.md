@@ -468,3 +468,10 @@ Hit the 100 hour mark though!
 
 ### Time today: 7 hours
 ### Time total: 104 hours
+
+# August 3rd
+
+Got ragebaited by this sensor. I just could not get it to tell apart white and yellow. That's when it hit me: I don't need all 6 sensors. I could get away with 3 and move the squares on other faces into their paths.
+
+### Time today: 4 hours
+### Time total: 108 hours
