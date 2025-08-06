@@ -21,6 +21,10 @@ struct ServoWrapper {
         servo.attach(servo_pin);
     }
 
+    void detach() {
+        servo.detach();
+    }
+
     void reset() {
         servo.write(config.axis_positions[0][0]);
         position = 0;
@@ -59,3 +63,4 @@ extern ServoWrapper servo_6;
 extern ServoWrapper* servos[];
 
 extern void servo_input(int id, bool square_input);
+extern int execute_move(String move);

@@ -2,7 +2,7 @@
 
 #define C_SERVO_INPUT false // Enable manual input of servo angles via serial monitor.
 #define C_SERVO_INPUT_SQUARE false
-#define C_SERVO_INPUT_ID 2
+#define C_SERVO_INPUT_ID 1
 
 #define C_SERVO_TEST false
 

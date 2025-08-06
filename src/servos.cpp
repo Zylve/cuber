@@ -4,12 +4,12 @@
 
 ServoConfig servo_config_1 = {
     .axis_positions = {
-        {7, 50, 85, 126},
-        {7, 50, 85, 126},
-        {7, 44, 85, 126},
-        {7, 44, 78, 126}
+        {2, 42, 78, 117},
+        {2, 38, 78, 117},
+        {2, 38, 78, 117},
+        {2, 38, 72, 117}
     },
-    .square_positions = {25, 42, 61, 79, 99, 119, 140, 157},
+    .square_positions = {20, 35, 56, 71, 93, 109, 132, 149},
     .square_ids = {2, 3, 6, 9, 8, 7, 4, 1} // Different because of the net in the algorithm :/
 };
 
@@ -20,7 +20,7 @@ ServoConfig servo_config_2 = {
         {14, 49, 103, 145},
         {14, 49, 92, 145}
     },
-    .square_positions = {33, 52, 74, 96, 118, 140, 154, 173},
+    .square_positions = {33, 52, 74, 96, 116, 140, 154, 173},
     .square_ids = {8, 7, 4, 1, 2, 3, 6, 9}
 };
 
@@ -37,12 +37,12 @@ ServoConfig servo_config_3 = {
 
 ServoConfig servo_config_4 = {
     .axis_positions = {
-        {27, 70, 110, 150},
-        {27, 70, 110, 150},
-        {27, 65, 110, 150},
-        {27, 65, 105, 150}
+        {23, 65, 108, 147},
+        {23, 65, 108, 147},
+        {23, 60, 108, 147},
+        {23, 60, 100, 147}
     },
-    .square_positions = {0, 22, 45, 67, 90, 112, 135, 157},
+    .square_positions = {41, 59, 80, 99, 124, 143, 160, 178},
     .square_ids = {8, 7, 4, 1, 2, 3, 6, 9}
 };
 
@@ -50,19 +50,19 @@ ServoConfig servo_config_5 = {
     .axis_positions = {
         {5, 50, 93, 135},
         {5, 48, 93, 135},
-        {5, 42, 93, 135},
-        {5, 42, 83, 135}
+        {5, 39, 93, 135},
+        {5, 39, 83, 135}
     },
-    .square_positions = {0, 22, 45, 67, 90, 112, 135, 157},
+    .square_positions = {24, 42, 63, 84, 108, 129, 148, 167},
     .square_ids = {8, 7, 4, 1, 2, 3, 6, 9}
 };
 
 ServoConfig servo_config_6 = {
     .axis_positions = {
-        {23, 65, 108, 147},
-        {23, 65, 108, 147},
-        {23, 60, 108, 147},
-        {23, 60, 100, 147}
+        {27, 70, 110, 150},
+        {27, 70, 110, 150},
+        {27, 65, 110, 150},
+        {27, 65, 105, 150}
     },
     .square_positions = {0, 22, 45, 67, 90, 112, 135, 157},
     .square_ids = {8, 7, 4, 1, 2, 3, 6, 9}
@@ -122,4 +122,51 @@ void servo_input(int id, bool square_input) {
 
         while(Serial.available()) Serial.read();
     }
+}
+
+int execute_move(String move) {
+    if(move == "D") {
+            servos[3]->turn_right();
+        } else if(move == "D'") {
+            servos[3]->turn_left();
+        } else if(move == "D2") {
+            servos[3]->turn_180();
+
+        } else if(move == "F") {
+            servos[2]->turn_right();
+        } else if(move == "F'") {
+            servos[2]->turn_left();
+        } else if(move == "F2") {
+            servos[2]->turn_180();
+
+        } else if(move == "B") {
+            servos[5]->turn_right();
+        } else if(move == "B'") {
+            servos[5]->turn_left();
+        } else if(move == "B2") {
+            servos[5]->turn_180();
+
+        } else if(move == "L") {
+            servos[4]->turn_right();
+        } else if(move == "L'") {
+            servos[4]->turn_left();
+        } else if(move == "L2") {
+            servos[4]->turn_180();
+
+        } else if(move == "R") {
+            servos[1]->turn_right();
+        } else if(move == "R'") {
+            servos[1]->turn_left();
+        } else if(move == "R2") {
+            servos[1]->turn_180();
+
+        } else if(move == "U") {
+            servos[0]->turn_right();
+        } else if(move == "U'") {
+            servos[0]->turn_left();
+        } else if(move == "U2") {
+            servos[0]->turn_180();
+        }
+
+    return 1000;
 }

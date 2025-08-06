@@ -3,9 +3,9 @@
 
 ColourConfig config_1 = {
     .white = { // White Face
-        .red = {0.30, 0.36},
-        .green = {0.31, 0.37},
-        .blue = {0.31, 0.37}
+        .red = {0.30, 0.37},
+        .green = {0.30, 0.37},
+        .blue = {0.30, 0.37}
     },
     .red = {
         .red = {0.48, 1.00},
@@ -13,24 +13,24 @@ ColourConfig config_1 = {
         .blue = {0.00, 0.20}
     },
     .green = {
-        .red = {0.35, 0.46},
-        .green = {0.30, 0.64},
+        .red = {0.05, 0.46},
+        .green = {0.50, 1.00},
         .blue = {0.00, 0.17}
     },
     .blue = {
-        .red = {0.11, 0.42},
-        .green = {0.15, 0.33},
-        .blue = {0.37, 0.68}
+        .red = {0.00, 0.25},
+        .green = {0.00, 0.25},
+        .blue = {0.50, 1.00}
     },
     .orange = {
-        .red = {0.38, 0.58},
+        .red = {0.40, 0.75},
         .green = {0.28, 0.36},
-        .blue = {0.13, 0.30}
+        .blue = {0.00, 0.30}
     },
     .yellow = {
-        .red = {0.33, 0.42},
-        .green = {0.33, 0.42},
-        .blue = {0.20, 0.29}
+        .red = {0.33, 0.50},
+        .green = {0.33, 0.44},
+        .blue = {0.05, 0.29}
     },
 
     .colour_map = {
@@ -42,9 +42,9 @@ ColourConfig config_1 = {
 
 ColourConfig config_2 = {
         .white = { // Red Face
-        .red = {0.32, 0.38},
+        .red = {0.31, 0.38},
         .green = {0.30, 0.36},
-        .blue = {0.29, 0.35}
+        .blue = {0.29, 0.37}
     },
     .red = {
         .red = {0.48, 1.00},
@@ -53,23 +53,23 @@ ColourConfig config_2 = {
     },
     .green = {
         .red = {0.16, 0.45},
-        .green = {0.55, 1.00},
-        .blue = {0.00, 0.15}
+        .green = {0.45, 1.00},
+        .blue = {0.00, 0.17}
     },
     .blue = {
         .red = {0.00, 0.15},
-        .green = {0.00, 0.15},
-        .blue = {0.70, 1.00}
+        .green = {0.30, 0.40},
+        .blue = {0.55, 1.00}
     },
     .orange = {
-        .red = {0.50, 0.80},
+        .red = {0.40, 0.80},
         .green = {0.24, 0.36},
-        .blue = {0.00, 0.20}
+        .blue = {0.00, 0.28}
     },
     .yellow = {
-        .red = {0.38, 0.50},
-        .green = {0.38, 0.46},
-        .blue = {0.00, 0.22}
+        .red = {0.35, 0.50},
+        .green = {0.35, 0.46},
+        .blue = {0.00, 0.27}
     },
 
     .colour_map = {
@@ -80,7 +80,7 @@ ColourConfig config_2 = {
 };
 
 ColourConfig config_3 = {
-        .white = { // Green Face
+        .white = { // Green Face; Not used
         .red = {0.30, 0.36},
         .green = {0.31, 0.37},
         .blue = {0.31, 0.37}
@@ -119,7 +119,85 @@ ColourConfig config_3 = {
 };
 
 ColourConfig config_4 = {
-        .white = { // Blue Face; Uncalibrated
+        .white = { // Yellow Face
+        .red = {0.30, 0.36},
+        .green = {0.31, 0.37},
+        .blue = {0.31, 0.37}
+    },
+    .red = {
+        .red = {0.48, 1.00},
+        .green = {0.00, 0.25},
+        .blue = {0.00, 0.20}
+    },
+    .green = {
+        .red = {0.28, 0.50},
+        .green = {0.50, 0.80},
+        .blue = {0.00, 0.20}
+    },
+    .blue = {
+        .red = {0.00, 0.20},
+        .green = {0.00, 0.40},
+        .blue = {0.45, 1.00}
+    },
+    .orange = {
+        .red = {0.36, 0.75},
+        .green = {0.28, 0.38},
+        .blue = {0.00, 0.30}
+    },
+    .yellow = {
+        .red = {0.33, 0.43},
+        .green = {0.33, 0.43},
+        .blue = {0.15, 0.29}
+    },
+
+    .colour_map = {
+        .red = {2100, 38000},
+        .green = {2700, 24000},
+        .blue = {2900, 18000}
+    }
+};
+
+ColourConfig config_5 = {
+        .white = { // Orange Face
+        .red = {0.30, 0.36},
+        .green = {0.30, 0.36},
+        .blue = {0.31, 0.37}
+    },
+    .red = {
+        .red = {0.60, 1.00},
+        .green = {0.00, 0.20},
+        .blue = {0.00, 0.20}
+    },
+    .green = {
+        .red = {0.34, 0.49},
+        .green = {0.45, 0.70},
+        .blue = {0.00, 0.15}
+    },
+    .blue = {
+        .red = {0.00, 0.34},
+        .green = {0.00, 0.32},
+        .blue = {0.43, 1.00}
+    },
+    .orange = {
+        .red = {0.40, 0.70},
+        .green = {0.28, 0.40},
+        .blue = {0.00, 0.25}
+    },
+    .yellow = {
+        .red = {0.33, 0.45},
+        .green = {0.33, 0.45},
+        .blue = {0.13, 0.29}
+    },
+
+    .colour_map = {
+        .red = {2600, 60000},
+        .green = {4100, 28000},
+        .blue = {3900, 20000}
+    }
+};
+
+ColourConfig config_6 = {
+        .white = { // Blue Face; Not used
         .red = {0.32, 0.36},
         .green = {0.30, 0.36},
         .blue = {0.32, 0.37}
@@ -154,84 +232,6 @@ ColourConfig config_4 = {
         .red = {3600, 60000},
         .green = {4000, 50000},
         .blue = {800, 18000} // 9200
-    }
-};
-
-ColourConfig config_5 = {
-        .white = { // Orange Face; Uncalibrated
-        .red = {0.30, 0.36},
-        .green = {0.31, 0.37},
-        .blue = {0.31, 0.37}
-    },
-    .red = {
-        .red = {0.48, 1.00},
-        .green = {0.00, 0.25},
-        .blue = {0.00, 0.20}
-    },
-    .green = {
-        .red = {0.35, 0.46},
-        .green = {0.30, 0.64},
-        .blue = {0.00, 0.17}
-    },
-    .blue = {
-        .red = {0.11, 0.42},
-        .green = {0.15, 0.33},
-        .blue = {0.37, 0.68}
-    },
-    .orange = {
-        .red = {0.38, 0.58},
-        .green = {0.28, 0.36},
-        .blue = {0.13, 0.30}
-    },
-    .yellow = {
-        .red = {0.33, 0.42},
-        .green = {0.33, 0.42},
-        .blue = {0.20, 0.29}
-    },
-
-    .colour_map = {
-        .red = {2500, 38000},
-        .green = {3600, 24000},
-        .blue = {3400, 18000}
-    }
-};
-
-ColourConfig config_6 = {
-        .white = { // Yellow Face; Uncalibrated
-        .red = {0.30, 0.36},
-        .green = {0.31, 0.37},
-        .blue = {0.31, 0.37}
-    },
-    .red = {
-        .red = {0.48, 1.00},
-        .green = {0.00, 0.25},
-        .blue = {0.00, 0.20}
-    },
-    .green = {
-        .red = {0.35, 0.46},
-        .green = {0.30, 0.64},
-        .blue = {0.00, 0.17}
-    },
-    .blue = {
-        .red = {0.11, 0.42},
-        .green = {0.15, 0.33},
-        .blue = {0.37, 0.68}
-    },
-    .orange = {
-        .red = {0.38, 0.58},
-        .green = {0.28, 0.36},
-        .blue = {0.13, 0.30}
-    },
-    .yellow = {
-        .red = {0.33, 0.42},
-        .green = {0.33, 0.42},
-        .blue = {0.20, 0.29}
-    },
-
-    .colour_map = {
-        .red = {2500, 38000},
-        .green = {3600, 24000},
-        .blue = {3400, 18000}
     }
 };
 

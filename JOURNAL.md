@@ -472,8 +472,26 @@ https://github.com/user-attachments/assets/758a44dc-87e6-4893-bd0c-782bb4a80f7b
 ### Time total: 104 hours
 
 # August 3rd
-
 Got ragebaited by this sensor. I just could not get it to tell apart white and yellow. That's when it hit me: I don't need all 6 sensors. I could get away with 3 and move the squares on other faces into their paths.
 
 ### Time today: 4 hours
 ### Time total: 108 hours
+
+# August 5th
+Was still getting ragebaited by this sensor. I deduced that for some reason it wasn't picking up the blue frequency of light properly. I was able to calibrate the remaining two sensors though.
+
+I ended up just writing an algorithm to detect the squares on the back face by moving them to the top and right faces for detection.
+
+I also had some shoddy wiring on the front sensor, but I could not for the life of me figure it out, so I used the same method for it as well.
+
+I had an issue with the power supply to the left face motor, so I disconnected it and spliced it into the right face motor :/
+
+A lot of issues, however I got full colour detection and solving working! Sometimes it fails to pick up colours, so I put a manual input that would catch those and ask you for the colour after the routine is done.
+
+Right now it's just optimization of the solving. Aiming for sub 10, will be happy with sub 15.
+
+Video of first colour detection + solve (on the slack):
+https://hackclub.slack.com/files/U06SYK3M62J/F0994RHQTKL/20250805_202403.mp4
+
+### Time today: 8 hours
+### Time total: 116 hours
