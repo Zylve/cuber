@@ -5,6 +5,8 @@ Cuber is an automatic rubiks cube robot that can read the state of a 3x3 cube an
 
 Cuber was funded by and built for Hack Club's [Highway](https://highway.hackclub.com) program. You can read my journal [here](./JOURNAL.md).
 
+
+
 ## 3D Model
 <img src="journal/image copy 9.png" width="360">
 

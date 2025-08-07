@@ -5,9 +5,9 @@ Colours:
 - White: 0 (1)
 - Red: 1 (2)
 - Green: 2 (3)
-- Blue: 3 (4)
+- Yellow: 3 (4)
 - Orange: 4 (5)
-- Yellow: 5 (6)
+- Blue: 5 (6)
 
 Other:
 - 5V: V
