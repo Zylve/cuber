@@ -168,5 +168,5 @@ int execute_move(String move) {
             servos[0]->turn_180();
         }
 
-    return 1000;
+    return 800;
 }
