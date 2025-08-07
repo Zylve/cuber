@@ -3,7 +3,7 @@
 # Cuber
 Cuber is an automatic rubiks cube robot that can read the state of a 3x3 cube and solve it using servo motors.
 
-Cuber was funded by and built for Hack Club's [Highway](https://highway.hackclub.com) program. You can read my journal [here](./JOURNAL.md).
+Cuber was funded by and built for Hack Club's [Highway](https://highway.hackclub.com) program. You can read my journal [here](./JOURNAL.md). Find documentation on how to build your own [here](./docs/README.md).
 
 
 
