@@ -23,23 +23,26 @@ void setup() {
         delay(1000);
     }
 
-    while(!connected) {
-        Serial.println("esp32_connect");
-        delay(250);
-        if(Serial.available()) {
-            String read = Serial.readStringUntil('\n');
-            if(read == "pc_connect") {
-                connected = true;
-                Serial.println("connected");
+    if(C_MAIN) {
+        while(!connected) {
+            Serial.println("esp32_connect");
+            delay(250);
+            if(Serial.available()) {
+                String read = Serial.readStringUntil('\n');
+                if(read == "pc_connect") {
+                    connected = true;
+                    Serial.println("connected");
+                }
             }
         }
+
+        delay(1000);
+
+        colour_routine_test();
+
+        solve_test();
+
     }
-
-    delay(1000);
-
-    colour_routine_test();
-
-    solve_test();
 }
 
 void loop() {
