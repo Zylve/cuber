@@ -5,7 +5,7 @@ description: "An automatic Rubik's Cube solver"
 created_at: "2024-05-17"
 ---
 
-### Total Time: 86 hours
+### Total Time: 116 hours
 ---
 
 # May 15th: Started work!

@@ -22,7 +22,8 @@ The gearboxes are attached to the main nets via 1/4-20 hardware.
 
 ## Electronics
 <img src="../journal/image copy 10.png">
-Cuber was wired using the following schematic. To prevent larges amounts of current going through the ESP32, you must distribute power directly from the wall. I used wagos to do this, but you can choose a different method. You can view my distribution [here](./Wiring%20Guide.md).
+
+Cuber was wired using the following schematic. To prevent larges amounts of current going through the ESP32, you must distribute power directly from the wall. I used wagos to do this, but you can choose a different method. You can view my distribution [here](./WIRING.md).
 
 The S0 & S1 pins on the colour sensors are wired to their secondary set of VCC and GND pins. The S2 & S3 connections are distributed from a single ESP32 pin. All other signal wires are point-to-point to the ESP32.
 
@@ -129,7 +130,7 @@ On a system with port access, run the python script
 ./bin/python main.py # linux/mac
 ./Scripts/python main.py # windows
 ```
-Once connected, Cuber will start reading the faces of the cube. Once it is finished, it will prompt you to enter the colours for any squares that it failed to read. It will display the location (U2, R5, etc) and prompt for the colour (U, R, F, D, L, B). Read through the [notes](#notes) and the [Colour Routine](./Colour%20Routine.md) file for information on that.
+Once connected, Cuber will start reading the faces of the cube. Once it is finished, it will prompt you to enter the colours for any squares that it failed to read. It will display the location (U2, R5, etc) and prompt for the colour (U, R, F, D, L, B). Read through the [notes](#notes) and the [Colour Routine](./COLOURS.md) file for information on that.
 
 After all the colours are entered, it will run the kociemba algorithm, will start running the solution while displaying the moves on the serial monitor.
 
