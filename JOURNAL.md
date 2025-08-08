@@ -495,3 +495,11 @@ https://hackclub.slack.com/files/U06SYK3M62J/F0994RHQTKL/20250805_202403.mp4
 
 ### Time today: 8 hours
 ### Time total: 116 hours
+
+# August 7th
+Spent the day cleaning up the repo, and writing documentation.
+
+I also created a pretty sick [youtube video](https://www.youtube.com/shorts/K8QNXNZYxWQ).
+
+### Time today: 6 hours
+### Time total: 122 hours
